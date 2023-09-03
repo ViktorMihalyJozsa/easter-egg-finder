@@ -26,6 +26,16 @@
     justify-content: space-between;
     margin: 2vh 0;
   }
+
+  .header {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: left;
+    font-size: 50pt;
+    color: rgba(0, 0, 0, 0.5);
+    text-shadow: 3px 3px rgba(249, 4, 4, 0.5), -1px -1px #444;
+  }
   
   .button {
     cursor: pointer;
@@ -37,7 +47,7 @@
     border-radius: 15px;
   }
   
-  .ui-element {
+  .ui-element {    
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   }
   
@@ -61,7 +71,6 @@
   }
 
   .footer {
-    height: 5vh;
     width: 100%;
     padding: 2vh 0;
     text-align: center;

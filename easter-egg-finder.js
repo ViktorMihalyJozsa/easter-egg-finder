@@ -4,7 +4,7 @@ const actionButton = document.getElementById('action-button');
 const mineCounter = document.getElementById('mine-count');
 const timeCounter = document.getElementById('time');
 
-const size = 50;
+const size = canvas.width / 17;
 const columns = canvas.width / size;
 const rows = canvas.height / size;
 const mine = 'mine';
