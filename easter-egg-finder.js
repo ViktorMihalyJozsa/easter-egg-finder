@@ -1,13 +1,15 @@
 const canvas = document.getElementById('myCanvas');
+
 const c = canvas.getContext('2d');
 const actionButton = document.getElementById('action-button');
 const mineCounter = document.getElementById('mine-count');
 const timeCounter = document.getElementById('time');
 
-canvas.width = 800;
-canvas.height = 400;
+const size = canvas.width / 7.5;
 
-const size = 40;
+canvas.width = size * 20;
+canvas.height = size * 10;
+
 const columns = canvas.width / size;
 const rows = canvas.height / size;
 const mine = 'mine';
