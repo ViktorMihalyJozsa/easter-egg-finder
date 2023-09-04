@@ -9,7 +9,7 @@ const bodyHeight = document.body.clientHeight; // a body magassága
 const canvas = document.getElementById('myCanvas'); // a canvas elem
 const c = canvas.getContext('2d'); // a canvas contextje
 
-const size = 50;
+size = 50;
 
 canvas.width = (bodyWidth * 0.66) - ((bodyWidth * 0.66) % size); // a canvas szélessége
 canvas.height = (bodyHeight * 0.66) - ((bodyHeight * 0.66) % size); // a canvas magassága
