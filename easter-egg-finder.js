@@ -1,17 +1,28 @@
-const canvas = document.getElementById('myCanvas');
+// ----------  E A S T E R   E G G   F I N D  -  J A V A S C R I P T  ---------- //
 
-const c = canvas.getContext('2d');
+// ----------------------------------------------------------------------------- //
+// ----------  C A N V A S  -  S T Y L E  -------------------------------------- //
+
+const bodyWidth = document.body.clientWidth; // a body szélessége
+const bodyHeight = document.body.clientHeight; // a body magassága
+
+const canvas = document.getElementById('myCanvas'); // a canvas elem
+const c = canvas.getContext('2d'); // a canvas contextje
+
+canvas.width = bodyWidth * 0.6; // a canvas szélessége
+size = canvas.width / 24; // a mezők mérete (SECURITY)
+canvas.height = size * 10; // a canvas magassága
+
+const columns = canvas.width / size; // oszlopok száma (SECURITY)
+const rows = canvas.height / size; // sorok száma (SECURITY)
+
+// ----------  E N D   C A N V A S  -  S T Y L E  ------------------------------ //
+// ----------------------------------------------------------------------------- //
+
 const actionButton = document.getElementById('action-button');
 const mineCounter = document.getElementById('mine-count');
 const timeCounter = document.getElementById('time');
 
-size = canvas.width / 7.5;
-
-canvas.width = size * 20;
-canvas.height = size * 10;
-
-const columns = canvas.width / size;
-const rows = canvas.height / size;
 const mine = 'mine';
 const mineCount = 20;
 const images = {
