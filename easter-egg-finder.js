@@ -9,10 +9,11 @@ const bodyHeight = document.body.clientHeight; // a body magassága
 const canvas = document.getElementById('myCanvas'); // a canvas elem
 const c = canvas.getContext('2d'); // a canvas contextje
 
-size = (bodyWidth * 0.6) / 20; // a mezők mérete (SECURITY)
-
 canvas.width = bodyWidth * 0.6; // a canvas szélessége
-canvas.height = size * 10; // a canvas magassága
+//canvas.height = ((bodyWidth * 0.6) / 20) * 10; // a canvas magassága
+canvas.height = bodyHeight * 0.6; // a canvas magassága
+
+//size = (canvas.width / canvas.height) * 20; // a mezők mérete
 
 const columns = canvas.width / size; // oszlopok száma (SECURITY)
 const rows = canvas.height / size; // sorok száma (SECURITY)
