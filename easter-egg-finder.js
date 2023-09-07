@@ -11,7 +11,7 @@ const c = canvas.getContext('2d'); // a canvas contextje
 
 size = 40; // a mezők mérete
 
-canvas.width = bodyHeight * 0.95 // a canvas szélessége
+canvas.width = (bodyHeight * 0.95) - ((bodyHeight * 0.95) % size); // a canvas szélessége
 canvas.height = (bodyHeight * 0.66) - ((bodyHeight * 0.66) % size); // a canvas magassága
 
 const columns = canvas.width / size;
