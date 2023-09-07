@@ -27,7 +27,7 @@ const mineCounter = document.getElementById('mine-count');
 const timeCounter = document.getElementById('time');
 
 const mine = 'mine';
-const mineCount = 20;
+const mineCount = 5;
 const images = {
   'hidden': document.getElementById('hidden'),
   'mine': document.getElementById('exploded-mine'),
