@@ -11,7 +11,7 @@ const c = canvas.getContext('2d'); // a canvas contextje
 
 size = 40; // a mezők mérete
 
-canvas.width = (bodyWidth * 0.66) - ((bodyWidth * 0.66) % size); // a canvas szélessége
+canvas.width = bodyHeight * 0.95 // a canvas szélessége
 canvas.height = (bodyHeight * 0.66) - ((bodyHeight * 0.66) % size); // a canvas magassága
 
 const columns = canvas.width / size;
@@ -25,7 +25,7 @@ const mineCounter = document.getElementById('mine-count');
 const timeCounter = document.getElementById('time');
 
 const mine = 'mine';
-const mineCount = 20;
+const mineCount = 5;
 const images = {
   'hidden': document.getElementById('hidden'),
   'mine': document.getElementById('exploded-mine'),
