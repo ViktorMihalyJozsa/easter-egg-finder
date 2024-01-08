@@ -1,191 +1,136 @@
 * {
-    box-sizing: border-box;
+    box-sizing:  border-box;
     user-select: none;
   }
   
   html, body {
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height:          100%;
+    width:           100%;
+    margin:          auto;
+
+    display:         flex;
+    flex-direction:  column;
+    align-items:     center;
     justify-content: center;
-    font-family: 'Caveat', sans-serif;
+
+    font-family:     'Caveat', sans-serif;
   }
   
   body {
-    background-image: url("../assets/easter-background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image:    url("../assets/easter-background.png");
+    background-size:     cover;
+    background-repeat:   no-repeat;
     background-position: center;
   }
 
-/* ----------------------------------------------------- */
-/* ----------  HEADER STYLE  --------------------------- */
+
+/*  ========================================================================  *\
+    F O N T  S T Y L E
+\*  ========================================================================  */
+
   h1, p {
-    margin: 0;
+    margin:  0;
     padding: 0;
   }
 
   h1 {
-    font-size: 6vw;
-    letter-spacing: 1.5vw;
-    font-weight: bold;
-    color: rgba(102, 6, 6, 0.25);
-    text-shadow: 0.3vh 0.3vh rgba(249, 4, 4, 0.5), -1px -1px #444;
+    font-size:      70px;
+    letter-spacing: 10px;
+    font-weight:    bold;
+    color:          rgba(102, 6, 6, 0.25);
+    text-shadow:    0.3vh 0.3vh rgba(249, 4, 4, 0.5), -1px -1px #444;
   }
 
   p {
-    font-size: 1.5vw;
-    letter-spacing: 0.25vw;
-    color: rgba(102, 6, 6, 0.75);
-    text-shadow: 1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
+    font-size:      24px;
+    letter-spacing: 2px;
+    color:          rgba(102, 6, 6, 0.75);
+    text-shadow:    1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
   } 
 
-      @media (max-width: 768px) {
-
-          h1 {
-              font-size: 6vh;
-              letter-spacing: 1.5vw;
-              font-weight: bold;
-              color: rgba(102, 6, 6, 0.25);
-              text-shadow: 0.3vh 0.3vh rgba(249, 4, 4, 0.5), -1px -1px #444;
-          }
-  
-          p {
-              font-size: 2vh;
-              letter-spacing: 0.25vw;
-              color: rgba(102, 6, 6, 0.75);
-              text-shadow: 1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
-          }
-  
-      }
-
-  .header {
-    width: 100%;
-    padding: 2vh 0;
-    text-align: center;
+  a {
+    text-decoration: none;
+    color:           rgba(198, 13, 13, 1);
+    text-shadow:     1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
   }
 
-/* ----------------------------------------------- */
-/* ----------  CONTROL PANEL  -------------------- */
+  a:hover {
+    font-size:      30px;
+    letter-spacing: 4px;
+    font-weight:    bold;
+    color:          rgba(198, 13, 13, 1);
+    text-shadow:    1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
+    transition:     all 0.5s ease-in-out;
+  }
+
+
+/*  ========================================================================  *\
+    C O N T R O L  P A N E L
+\*  ========================================================================  */
+
   .control-panel {
-    display: flex;
-    align-items: center;
+    display:         flex;
+    align-items:     center;
     justify-content: space-between;
-    margin: 2vh 0;
+    margin:          20px 0;
   }
 
   .text-on-image {
-    position: relative;
-    display: flex;
+    position:        relative;
+    display:         flex;
     justify-content: center;
-    align-items: center;
+    align-items:     center;
   }
 
   .button {
-    cursor: pointer;
-    height: 15vh;
-    border-radius: 1.5vw;
+    cursor:        pointer;
+    width:         100px;
+    height:        80px;
+    border-radius: 12px;
+    box-shadow:    1vh 1vh 1vh rgba(0, 0, 0, 0.5);
   }
 
   .ui-element {
-    border-radius: 2vh;
-    height: 10vh;
-    box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.5);
+    width:         150px;
+    height:        50px;
+    border-radius: 12px;
+    box-shadow:    1vh 1vh 1vh rgba(0, 0, 0, 0.5);
   }
   
   .number-overlay {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    padding-left: 1vh;
-    font-size: 8vh;
-    font-weight: bold;
-    letter-spacing: 2vh;
-    color: rgba(102, 6, 6, 0.75);
-    text-shadow: 1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
+    position:       absolute;
+    text-align:     center;
+    width:          100%;
+    font-size:      50px;
+    letter-spacing: 10px;
+    font-weight:    bold;
+    color:          rgba(102, 6, 6, 0.75);
+    text-shadow:    1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
   }
 
-      @media (max-width: 768px) {
   
-          .button {
-              cursor: pointer;
-              height: 10vh;
-              border-radius: 1.5vw;
-          }
-
-          .ui-element {
-            border-radius: 1.2vh;
-            height: 6vh;
-            box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.5);
-          }
-
-          .number-overlay {
-            position: absolute;
-            text-align: center;
-            width: 100%;
-            padding-left: 1vh;
-            font-size: 6vh;
-            font-weight: bold;
-            letter-spacing: 2vh;
-            color: rgba(102, 6, 6, 0.75);
-            text-shadow: 1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
-          }
-
-      }
-  
-/* ----------  CONTROL PANEL - END  -------------------- */
-/* ----------------------------------------------------- */
+/*  ========================================================================  *\
+    C A N V A S  S T Y L E
+\*  ========================================================================  */
 
   .myCanvas {
-    width: 100%;
-    display: flex;
+    width:           100%;
+    display:         flex;
     justify-content: center;
-    align-items: center;
+    align-items:     center;
   }
 
   .canvas-element {
     box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.5);
   }
 
-/* ----------------------------------------------------- */
-/* ----------  FOOTER STYLE  --------------------------- */
+
+/*  ========================================================================  *\
+    F O O T E R  S T Y L E
+\*  ========================================================================  */
+
   .footer {
-    width: 100%;
-    padding: 2vh 0;
+    width:      100%;
+    padding:    20px 0;
     text-align: center;
   }
-
-  a {
-    text-decoration: none;
-    color: rgba(198, 13, 13, 1);
-    text-shadow: 1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
-  }
-
-  a:hover {
-    font-size: 2vw;
-    letter-spacing: 1vw;
-    font-weight: bold;
-    color: rgba(198, 13, 13, 1);
-    text-shadow: 1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
-    transition: all 0.5s ease-in-out;
-  }
-
-      @media (max-width: 768px) {
-        a {
-            text-decoration: none;
-            color: rgba(198, 13, 13, 1);
-            text-shadow: 1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
-        }
-      
-        a:hover {
-            font-size: 2.5vh;
-            letter-spacing: 1vw;
-            font-weight: bold;
-            color: rgba(198, 13, 13, 1);
-            text-shadow: 1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
-            transition: all 0.5s ease-in-out;
-        }
-      }

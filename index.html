@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
+
     <meta charset="UTF-8">
     <title>Easter Egg Finder</title>
     <meta name="viewport" content="width=device-width initial-scale=1">
+
     <link rel="icon" type="image/png" href="assets/favicon.png">
+
 	  <link rel="stylesheet" type="text/css" href="css/meyer-reset.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.cdnfonts.com/css/caveat">
     <link rel="stylesheet" type="text/css" href="css/easter-egg-finder-style.css">
+
 </head>
+
 <body>
+
   <header>
       <div class="header">
           <h1>Easter Egg Finder</h1>
       </div>
   </header>
+
   <main>
       <div id="control-panel" class="control-panel">
+
         <div class="text-on-image">
           <img id="counter" class="ui-element" src="assets/counter.png">
           <span id="mine-count" class="number-overlay">000</span>
         </div>
+
         <img id="action-button" class="button" src="assets/button-start.png">
+
         <div class="text-on-image">
           <img id="timer" class="ui-element" src="assets/counter.png">
           <span id="time" class="number-overlay">000</span>
         </div>
+
       </div>
+
       <div class="myCanvas">
           <canvas id="myCanvas" class="canvas-element"></canvas>
       </div>
   </main>
+
   <img id="hidden" src="assets/hidden.png" style="display: none;">
   <img id="mine" src="assets/mine.png" style="display: none;">
   <img id="exploded-mine" src="assets/exploded-mine.png" style="display: none;">
@@ -45,7 +59,9 @@
   <img id="field-8" src="assets/8.png" style="display: none;">
   <img id="flag" src="assets/flag.png" style="display: none;">
   <img id="flagged-wrong" src="assets/flagged-wrong.png" style="display: none;">
+
   <script src="js/easter-egg-finder.js"></script>
+
   <footer>
       <div class="footer">
           <p>All rights reserved ~ By 
@@ -54,5 +70,7 @@
           </p>
       </div>
   </footer>
+
 </body>
+
 </html>
