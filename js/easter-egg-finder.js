@@ -13,7 +13,7 @@ const height = canvas.height;
 
 size = 30;  // a mezők mérete
 
-canvas.width  = 330;  // a canvas szélessége = 360px / 12 oszlop;
+canvas.width  = 330;  // a canvas szélessége = 360px / 11 oszlop;
 canvas.height = 420;  // a canvas magassága  = 420px / 14 sor;
 
 const columns = canvas.width / size;
