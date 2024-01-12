@@ -34,7 +34,7 @@
   }
 
   h1 {
-    font-size:      70px;
+    font-size:      40px;
     letter-spacing: 10px;
     font-weight:    bold;
     color:          rgba(102, 6, 6, 0.25);
@@ -42,7 +42,7 @@
   }
 
   p {
-    font-size:      24px;
+    font-size:      16px;
     letter-spacing: 2px;
     color:          rgba(102, 6, 6, 0.75);
     text-shadow:    1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
@@ -55,7 +55,7 @@
   }
 
   a:hover {
-    font-size:      30px;
+    font-size:      20px;
     letter-spacing: 4px;
     font-weight:    bold;
     color:          rgba(198, 13, 13, 1);
