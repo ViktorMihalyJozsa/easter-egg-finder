@@ -11,9 +11,9 @@ const c = canvas.getContext('2d');                   // a canvas contextje
 const width = canvas.width;
 const height = canvas.height;
 
-size = 40;  // a mezők mérete
+size = 30;  // a mezők mérete
 
-canvas.width = 400;   // a canvas szélessége
+canvas.width = 360;   // a canvas szélessége
 canvas.height = 480;  // a canvas magassága
 
 const columns = canvas.width / size;
