@@ -50,6 +50,7 @@
 
   a {
     text-decoration: none;
+    letter-spacing:  2px;
     font-weight:     bold;
     color:           rgba(198, 13, 13, 1);
     text-shadow:     1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
