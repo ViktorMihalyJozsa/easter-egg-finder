@@ -1,0 +1,20 @@
+/*  ========================================================================  *\
+    
+    * OVERVIEW
+          
+    * This style.css file handles the .ccs files required for the page.
+    * Instead of placing them separately in the index.html & 
+      <head></head> file.
+
+    * Here we link them with a style.css.
+
+    * This creates a linked but separate .css file system,
+      which does not further knead the <head></head> part of index.html,
+      this will make the code parsimonious.
+
+    * Also, thanks to this, the .css codes remain transparent and easy to use.
+    
+\*  ========================================================================  */
+
+
+@import url("easter-egg-finder-style.css");
