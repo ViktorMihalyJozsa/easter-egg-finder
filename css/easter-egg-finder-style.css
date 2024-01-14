@@ -19,7 +19,7 @@
     background-image:    url("../assets/easter-background.png");
     background-size:     cover;
     background-repeat:   no-repeat;
-    background-position: center;
+    background-position: right;
   }
 
 /*  ========================================================================  *\
@@ -57,8 +57,8 @@
     font-size:      36px;
     letter-spacing: 10px;
     font-weight:    bold;
-    color:          rgba(102, 6, 6, 0.25);
-    text-shadow:    0.3vh 0.3vh rgba(249, 4, 4, 0.5), -1px -1px #444;
+    color:          rgba(198, 13, 13, 1);
+    text-shadow:    2px 2px rgba(255, 255, 255, 0.75), -1px -1px #444;
   }
 
   p {
