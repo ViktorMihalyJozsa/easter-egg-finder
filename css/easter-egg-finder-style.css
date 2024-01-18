@@ -26,22 +26,33 @@
     C O N T A I N E R
 \*  ========================================================================  */
 
-/*  .container {
+.container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-      "header main"
-      "footer .";
+      ". header main ."
+      "footer footer footer footer";
 
-  /*  column-gap: clamp(20px, 2vw, 40px);  /*  Mobil: min.size=20px  -  Tablet: vievport size  -  FHD: max.size=40px  */
-/*  }  */
-
-/* @media(max-width: 1025px) {
+  column-gap: 40px;  /*clamp(20px, 2vw, 40px);  /* Mobil: min.size=20px  -  Tablet: vievport size  -  FHD: max.size=40px  */
 }
 
-@media(max-width: 768px) {
-}  */
+    @media(max-width: 1025px) {
+    }
+
+    @media(max-width: 768px) {
+      .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+      
+        /*  column-gap: 40px;  /*clamp(20px, 2vw, 40px);  /* Mobil: min.size=20px  -  Tablet: vievport size  -  FHD: max.size=40px  */
+      }
+    }
 
 
 /*  ========================================================================  *\
@@ -54,7 +65,7 @@
   }
 
   h1 {
-    font-size:      36px;
+    font-size:      clamp(36px, 3.75vw, 72px);  /*  min.:36px  */
     letter-spacing: 10px;
     font-weight:    bold;
     color:          rgba(198, 13, 13, 1);
@@ -62,7 +73,7 @@
   }
 
   p {
-    font-size:      13px;
+    font-size:      clamp(13px, 1.354vw, 26px);  /*  min.:13px  */
     letter-spacing: 1px;
     color:          rgba(102, 6, 6, 0.75);
     text-shadow:    1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
@@ -90,7 +101,7 @@
     H E A D E R
 \*  ========================================================================  */
 
-.header {
+header {
     grid-area: header;
 
     /* width:      25%; */
@@ -102,8 +113,8 @@
     M A I N
 \*  ========================================================================  */
 
-.main {
-  grid-area: main;
+main {
+    grid-area: main;
 }
 
 
@@ -114,45 +125,45 @@
       .control-panel {
         display:         flex;
         align-items:     center;
-        justify-content: space-between;
+        justify-content: space-around;
 
         /* width:           25%; */
         margin:          20px 0;
       }
 
-      .text-on-image {
-        position:        relative;
-        display:         flex;
-        justify-content: center;
-        align-items:     center;
-      }
+          .text-on-image {
+              position:        relative;
+              display:         flex;
+              justify-content: center;
+              align-items:     center;
+          }
 
-      .button {
-        cursor:        pointer;
-        width:         100px;
-        height:        80px;
-        border-radius: 12px;
-        box-shadow:    1vh 1vh 1vh rgba(0, 0, 0, 0.5);
-      }
+              .ui-element {
+                  width:         100px;
+                  height:        40px;
+                  border-radius: 8px;
+                  box-shadow:    1vh 1vh 1vh rgba(0, 0, 0, 0.5);
+              }
+      
+              .number-overlay {
+                  position:       absolute;
+                  text-align:     center;
+    
+                  width:          100%;
+                  font-size:      40px;
+                  letter-spacing: 10px;
+                  font-weight:    bold;
+                  color:          rgba(102, 6, 6, 0.75);
+                  text-shadow:    1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
+              }
 
-      .ui-element {
-        width:         100px;
-        height:        40px;
-        border-radius: 8px;
-        box-shadow:    1vh 1vh 1vh rgba(0, 0, 0, 0.5);
-      }
-  
-      .number-overlay {
-        position:       absolute;
-        text-align:     center;
-
-        width:          100%;
-        font-size:      40px;
-        letter-spacing: 10px;
-        font-weight:    bold;
-        color:          rgba(102, 6, 6, 0.75);
-        text-shadow:    1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
-      }
+          .button {
+              cursor:        pointer;
+              width:         100px;
+              height:        80px;
+              border-radius: 12px;
+              box-shadow:    1vh 1vh 1vh rgba(0, 0, 0, 0.5);
+          }
 
   
     /*  ========================================================================  *\
@@ -176,10 +187,12 @@
     F O O T E R
 \*  ========================================================================  */
 
-  .footer {
+footer {
     grid-area:  footer;
+    /*grid-column: 1/2;
+    grid-row: 2;*/
 
-    /* width:      25%; */
+    width:      100%;
     padding:    20px 0;
     text-align: center;
-  }
+}

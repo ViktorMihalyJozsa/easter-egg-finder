@@ -1,7 +1,11 @@
-// ----------  E A S T E R   E G G   F I N D  -  J A V A S C R I P T  ---------- //
+/*  ========================================================================  *\
+      E A S T E R   E G G   F I N D  -  J A V A S C R I P T
+\*  ========================================================================  */
 
-// ----------------------------------------------------------------------------- //
-// ----------  C A N V A S  -  S T Y L E  -------------------------------------- //
+
+/*  ========================================================================  *\
+      C A N V A S  -  S T Y L E
+\*  ========================================================================  */
 
 const bodyWidth = document.body.clientWidth;    // a body szélessége
 const bodyHeight = document.body.clientHeight;  // a body magassága
@@ -19,15 +23,17 @@ canvas.height = (bodyHeight * 0.65) - ((bodyHeight * 0.65) % size);  // a canvas
 const columns = canvas.width / size;
 const rows = canvas.height / size;
 
-// ----------  E N D   C A N V A S  -  S T Y L E  ------------------------------ //
-// ----------------------------------------------------------------------------- //
+/*  ========================================================================  *\
+      E N D  C A N V A S  -  S T Y L E
+\*  ========================================================================  */
+
 
 const actionButton = document.getElementById('action-button');
 const mineCounter = document.getElementById('mine-count');
 const timeCounter = document.getElementById('time');
 
 const mine = 'mine';
-const mineCount = 20;  // a keresendők darabszáma
+const mineCount = 5;  // a keresendők darabszáma
 const images = {
   'hidden': document.getElementById('hidden'),
   'mine': document.getElementById('exploded-mine'),
@@ -296,27 +302,32 @@ function convertNumberTo3DigitString(number) {
 }
 
 
-// Ez a függvény megvárja, amíg az összes kép betöltődik, és csak utána hívja meg a paraméterként kapott másik függvényt.
-// Az első paraméter a meghívandó függvény, a második paraméter a betöltési idő, ami 0-ról indul.
+/*  ========================================================================  *\
+      L O A D I N G  -  F U N C T I O N
+\*  ========================================================================  */
 
-function whenAllImagesLoaded(onAllImagesLoaded, loadTime = 0) {
-  const imageCount = Object.values(images).length;  // az összes kép száma
-  let loadedImages = 0;                             // azoknak a képeknek a száma, amik már betöltődtek
-  for (let image of Object.values(images)) {        // végigmegyünk az összes képen
-    if (image.complete) {                           // ha a kép betöltődött
-      loadedImages++;                               // növeljük a betöltött képek számát
+// Ez a függvény megvárja, amíg az összes kép betöltődik:
+
+function whenAllImagesLoaded(onAllImagesLoaded, loadTime = 0) {  // Az első paraméter a meghívandó függvény, a második paraméter a betöltési idő, ami 0-ról indul.
+  const imageCount = Object.values(images).length;               // az összes kép száma
+  let loadedImages = 0;                                          // azoknak a képeknek a száma, amik már betöltődtek
+  for (let image of Object.values(images)) {                     // végigmegyünk az összes képen
+    if (image.complete) {                                        // ha a kép betöltődött
+      loadedImages++;                                            // növeljük a betöltött képek számát
     }
   }
-  // ha még nem töltődött be minden kép, és még nem telt el 3 másodperc
-  if (loadedImages < imageCount && loadTime < 3000) { 
-    console.log('Waiting for images to load');                 // kiírjuk, hogy várunk a képekre
-    setTimeout(() => {                                         // 100ms múlva újra meghívjuk ezt a függvényt
-      whenAllImagesLoaded(onAllImagesLoaded, loadTime + 100);  // a betöltési időt 100ms-al növeljük
+
+//  Csak utána hívja meg a paraméterként kapott másik függvényt:
+
+  if (loadedImages < imageCount && loadTime < 3000) {            // ha még nem töltődött be minden kép, és még nem telt el 3 másodperc
+    console.log('Waiting for images to load');                   // kiírjuk, hogy várunk a képekre
+    setTimeout(() => {                                           // 100ms múlva újra meghívjuk ezt a függvényt
+      whenAllImagesLoaded(onAllImagesLoaded, loadTime + 100);    // a betöltési időt 100ms-al növeljük
     }, 100);
   }
-  if (loadTime >= 3000) {                       // ha már eltelt 3 másodperc
-    console.log('Images could not be loaded');  // kiírjuk, hogy nem sikerült betölteni a képeket
-  } else if (imageCount === loadedImages) {     // különben ha minden kép betöltődött
-    onAllImagesLoaded();                        // meghívjuk a paraméterként kapott függvényt
+  if (loadTime >= 3000) {                                        // ha már eltelt 3 másodperc
+    console.log('Images could not be loaded');                   // kiírjuk, hogy nem sikerült betölteni a képeket
+  } else if (imageCount === loadedImages) {                      // különben ha minden kép betöltődött
+    onAllImagesLoaded();                                         // meghívjuk a paraméterként kapott függvényt
   }
 }
