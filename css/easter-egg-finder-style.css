@@ -73,7 +73,8 @@
   }
 
   h1 {
-    font-size:      clamp(36px, 3.75vw, 72px);  /*  min.:36px  */
+    text-align:     left;
+    font-size:      9.259vh;  /*  100px - min.:36px  */
     letter-spacing: 10px;
     font-weight:    bold;
     color:          rgba(198, 13, 13, 1);
@@ -110,11 +111,11 @@
 \*  ========================================================================  */
 
 header {
-    grid-area: header;
+    grid-area:      header;
 
-    display: flex;
+    display:        flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap:        30px;
 }
 
     .headet-text {
@@ -124,7 +125,6 @@ header {
     .header-logo {
         width:               390px;
         height:              390px;
-        /*background-color: blueviolet;*/
         background-image:    url("../assets/header-logo.png");
         background-size:     cover;
         background-repeat:   no-repeat;
@@ -132,27 +132,27 @@ header {
     }
 
     @media(max-width: 768px) {
-        header {
-            grid-area: header;
-
-            display: flex;
-            flex-direction: row-reverse;
-            column-gap: 10px;
-        }
-
-            .headet-text {
-                text-align: left;
-            }
-
-            .header-logo {
-                width:               70px;
-                height:              70px;
-                /*background-color: blueviolet;*/
-                background-image:    url("../assets/header-logo.png");
-                background-size:     cover;
-                background-repeat:   no-repeat;
-                background-position: center;
-            }
+      header {
+          grid-area:      header;
+    
+          display:        flex;
+          flex-direction: column;
+          justify-content: flex-start;
+      }
+    
+          .headet-text {
+              text-align: left;
+          }
+    
+          .header-logo {
+              width:               60vh;
+              height:              60vh;
+              margin:              10vh 0vh 10vh 0vh;
+              background-image:    url("../assets/header-logo.png");
+              background-size:     cover;
+              background-repeat:   no-repeat;
+              background-position: left;
+          }
     }
 
 
