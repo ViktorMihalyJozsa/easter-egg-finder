@@ -125,7 +125,7 @@ header {
     
         display:         flex;
         flex-direction:  column;
-        row-gap:         10vh;
+        row-gap:         15vh;
 
         width:           auto;
         height:          auto;
@@ -133,12 +133,12 @@ header {
     }
     
         .headet-text {
-            width:   90vw;
+            width:   auto;
             height:  auto;
         }
     
         .header-logo {
-            width:          90vw;
+            width:          auto;
             height:         60vh;
     
             /*background-color:    blueviolet;*/
@@ -146,7 +146,7 @@ header {
     
             .header-logo-image {
                 float:   left;
-                width:   50vw;
+                width:   60vw;
                 height:  auto;
             }
 }
