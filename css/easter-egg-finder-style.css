@@ -146,8 +146,8 @@ header {
     
             .header-logo-image {
                 float:   left;
-                width:   auto;
-                height:  50vh;
+                width:   50vw;
+                height:  auto;
             }
 }
 
