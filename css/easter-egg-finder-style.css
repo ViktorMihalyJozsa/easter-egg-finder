@@ -35,12 +35,12 @@
     @media(max-width: 768px) {
         .container {
             display: grid;
-            grid-template-columns: 5vw 90vw 5vw;
+            grid-template-columns: 1fr;
             grid-template-rows: auto;
             grid-template-areas:
-                ". header ."
-                ". main ."
-                ". footer ."
+                "header"
+                "main"
+                "footer"
         }
     }
 
@@ -125,28 +125,27 @@ header {
     
         display:         flex;
         flex-direction:  column;
-        row-gap:         15vh;
 
         width:           auto;
         height:          auto;
-        padding:         5vh;
+        padding:         5vh 2vh 7vh 2vh;
     }
     
         .headet-text {
-            width:   auto;
-            height:  auto;
+            width:    auto;
+            height:   auto;
         }
     
         .header-logo {
-            width:          auto;
-            height:         60vh;
+            width:   auto;
+            height:  72vh;  /*  72vh  */
     
             /*background-color:    blueviolet;*/
         }
     
             .header-logo-image {
                 float:   left;
-                width:   60vw;
+                width:   65vw;
                 height:  auto;
             }
 }
@@ -160,7 +159,7 @@ main {
     grid-area: main;
 
     width:     auto;
-    height:    90vh;
+    height:    auto;
 }
 
 @media(max-width: 768px) {
@@ -180,9 +179,9 @@ main {
       .control-panel {
         display:         flex;
         align-items:     center;
-        justify-content: space-evenly;
+        justify-content: space-between;
 
-        margin:          2vh;
+        margin:          2vh 2vh 2vh 2vh;
       }
 
           .text-on-image {
@@ -242,9 +241,9 @@ main {
 footer {
     grid-area:  footer;
 
-    width:      100%;
+    width:      auto;
     height:     auto;
-    padding:    0vh 3vh 2vh 0vh;
+    padding:    0vh 2vh 2vh 0vh;
 
     text-align: right;
 }
