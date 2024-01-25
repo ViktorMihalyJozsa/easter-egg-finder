@@ -13,7 +13,7 @@
   
   body {
     background-image:    url("../assets/easter-background.png");
-    background-color:    rgba(12, 249, 4, 0.5);
+    background-color:    rgb(5, 143, 0);
     background-size:     cover;
     background-repeat:   no-repeat;
     background-position: right;
