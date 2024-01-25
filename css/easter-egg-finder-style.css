@@ -137,8 +137,9 @@ header {
         }
     
         .header-logo {
-            width:   auto;
-            height:  72vh;  /*  72vh  */
+            width:       auto;
+            height:      72vh;  /*  72vh  */
+            padding-top: 10vh;
     
             /*background-color:    blueviolet;*/
         }
