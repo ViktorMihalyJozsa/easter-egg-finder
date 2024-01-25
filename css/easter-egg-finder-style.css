@@ -128,7 +128,7 @@ header {
 
         width:           auto;
         height:          auto;
-        padding:         5vh 2vh 10vh 2vh;
+        padding:         5vh 2vh 8vh 2vh;
     }
     
         .headet-text {
@@ -138,7 +138,7 @@ header {
     
         .header-logo {
             width:       auto;
-            height:      auto;
+            height:      60vh;
             padding-top: 10vh;
     
             /*background-color:    blueviolet;*/
