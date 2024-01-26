@@ -13,10 +13,11 @@
   
   body {
     background-image:    url("../assets/easter-background.png");
-    background-color:    rgb(5, 143, 0);
     background-size:     cover;
     background-repeat:   no-repeat;
     background-position: right;
+
+    background-color:    rgb(5, 143, 0);
   }
 
 /*  ========================================================================  *\
@@ -139,6 +140,7 @@ header {
     
         display:         flex;
         flex-direction:  column;
+        row-gap:         0vh;
 
         width:           auto;
         height:          auto;
@@ -154,8 +156,6 @@ header {
             width:       auto;
             height:      55vh;
             padding-top: 15vh;
-    
-            background-color:  red;
         }
     
             .header-logo-image {
