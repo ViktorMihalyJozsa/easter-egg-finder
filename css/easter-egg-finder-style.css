@@ -266,9 +266,9 @@ footer {
 
     width:      auto;
     height:     auto;
-    padding:    2vh 2vh 4vh 6vh;
+    padding:    3vh 3vh 3vh 6vh;
 
     text-align: right;
 
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
 }
