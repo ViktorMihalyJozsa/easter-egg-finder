@@ -149,9 +149,9 @@ header {
         .header-logo {
             width:       auto;
             height:      60vh;
-            padding-top: 10vh;
+            padding-top: 15vh;
     
-            /*background-color:    blueviolet;*/
+            background-color:    blueviolet;
         }
     
             .header-logo-image {
