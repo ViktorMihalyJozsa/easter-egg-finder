@@ -151,12 +151,12 @@ header {
             height:      60vh;
             padding-top: 15vh;
     
-            background-color:    blueviolet;
+            /*background-color:    blueviolet;*/
         }
     
             .header-logo-image {
                 float:   left;
-                width:   65vw;
+                width:   70vw;
                 height:  auto;
             }
 }
