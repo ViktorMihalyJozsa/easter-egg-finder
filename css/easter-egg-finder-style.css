@@ -69,6 +69,8 @@
   h1 {text-align: left;}
   h2 {text-align: right;}
 
+  h1, h2 {background-color: lightblue;}
+
   p {
     font-size:      clamp(18px, 3.516vh, 36px);  /*  min.:18px  */
     letter-spacing: 1px;
@@ -107,20 +109,22 @@ header {
     row-gap:        5vh;
 
     width:          auto;
-    height:         80vh;
-    padding:        5vh;
+    height:         85vh;
+    padding:        5vh 5vh 0vh 5vh;
+
+    background-color: blue;
 }
 
     .headet-text {
         width:   auto;
-        height:  auto;
+        height:  15vh;
     }
 
     .header-logo {
         width:   auto;
         height:  60vh;
 
-        /*background-color: blueviolet;*/
+        background-color: red;
     }
 
         .header-logo-image {
@@ -151,7 +155,7 @@ header {
             height:      55vh;
             padding-top: 15vh;
     
-            /*background-color:    blueviolet;*/
+            background-color:  red;
         }
     
             .header-logo-image {
@@ -176,7 +180,7 @@ main {
     width:     3fr;
     height:    90vh;
 
-    /*background-color: blueviolet;*/
+    background-color: yellow;
 }
 
 @media(max-width: 768px) {
@@ -190,7 +194,7 @@ main {
         width:     1fr;
         height:    85vh;
     
-        /*background-color: blueviolet;*/
+        background-color: yellow;
     }
 }
 
@@ -205,6 +209,8 @@ main {
         justify-content: space-between;
 
         margin:          2vh 0vh 2vh 0vh;
+
+        background-color: blueviolet;
       }
 
           .text-on-image {
@@ -270,5 +276,5 @@ footer {
 
     text-align: right;
 
-    /*background-color: blueviolet;*/
+    background-color: yellowgreen;
 }
