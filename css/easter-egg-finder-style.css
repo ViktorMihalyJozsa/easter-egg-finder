@@ -276,8 +276,6 @@ footer {
         width:      auto;
         height:     auto;
         padding:    3vh 3vh 3vh 6vh;
-
-        background-color: darkgreen;
         text-align: right;
     }
 }
@@ -287,9 +285,9 @@ footer {
     T R I A L  B a c k g r o u n d - C o l o r  a n d  - I m a g e
 \*  ========================================================================  */
 
-/*body {background-color:  rgb(5, 143, 0);}
+body {background-color: darkgreen;}
 
-h1, h2 {background-color: lightblue;}
+/*h1, h2 {background-color: lightblue;}
 
 header {background-color: blue;}
     .header-logo {background-color: red;}
