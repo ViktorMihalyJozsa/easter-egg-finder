@@ -169,16 +169,28 @@ header {
 main {
     grid-area: main;
 
-    width:     auto;
-    height:    auto;
+    display:          flex;
+    justify-content:  center;
+    align-items:      center;
+
+    width:     3fr;
+    height:    90vh;
+
+    background-color: blueviolet;
 }
 
 @media(max-width: 768px) {
     main {
         grid-area: main;
-
-        width:     auto;
+    
+        display:          flex;
+        justify-content:  center;
+        align-items:      center;
+    
+        width:     1fr;
         height:    90vh;
+    
+        background-color: blueviolet;
     }
 }
 
