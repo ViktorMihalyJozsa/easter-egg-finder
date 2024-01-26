@@ -16,9 +16,8 @@
     background-size:     cover;
     background-repeat:   no-repeat;
     background-position: right;
-
-    background-color:    rgb(5, 143, 0);
   }
+
 
 /*  ========================================================================  *\
     C O N T A I N E R
@@ -70,8 +69,6 @@
   h1 {text-align: left;}
   h2 {text-align: right;}
 
-  h1, h2 {background-color: lightblue;}
-
   p {
     font-size:      clamp(18px, 3.516vh, 36px);  /*  min.:18px  */
     letter-spacing: 1px;
@@ -112,8 +109,6 @@ header {
     width:          auto;
     height:         85vh;
     padding:        5vh 5vh 0vh 5vh;
-
-    background-color: blue;
 }
 
     .headet-text {
@@ -124,8 +119,6 @@ header {
     .header-logo {
         width:   auto;
         height:  60vh;
-
-        background-color: red;
     }
 
         .header-logo-image {
@@ -179,8 +172,6 @@ main {
 
     width:     3fr;
     height:    90vh;
-
-    background-color: yellow;
 }
 
 @media(max-width: 768px) {
@@ -193,8 +184,6 @@ main {
     
         width:     1fr;
         height:    85vh;
-    
-        background-color: yellow;
     }
 }
 
@@ -209,8 +198,6 @@ main {
         justify-content: space-between;
 
         margin:          2vh 0vh 2vh 0vh;
-
-        background-color: blueviolet;
       }
 
           .text-on-image {
@@ -275,6 +262,18 @@ footer {
     padding:    3vh 3vh 3vh 6vh;
 
     text-align: right;
-
-    background-color: yellowgreen;
 }
+
+
+/*  ========================================================================  *\
+    T R I A L  B a c k g r o u n d - C o l o r
+\*  ========================================================================  */
+
+body {background-color:  rgb(5, 143, 0);}
+
+/*h1, h2 {background-color: lightblue;}
+header {background-color: blue;}
+    .header-logo {background-color: red;}
+main {background-color: yellow;}
+    .control-panel {background-color: blueviolet;}
+footer {background-color: yellowgreen;}*/
