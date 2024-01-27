@@ -150,7 +150,7 @@ header {
         .header-logo {
             width:       auto;
             height:      55vh;
-            padding-top: 15vh;
+            padding:     10vh 0vh 5vh 0vh;
         }
     
             .header-logo-image {
