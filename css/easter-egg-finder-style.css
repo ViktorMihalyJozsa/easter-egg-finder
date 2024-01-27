@@ -135,6 +135,7 @@ header {
     
         display:         flex;
         flex-direction:  column;
+        row-gap:         0vh;
 
         width:           auto;
         height:          auto;
@@ -289,7 +290,7 @@ footer {
 
 body {background-color: darkgreen;}
 
-/*h1, h2 {background-color: lightblue;}
+h1, h2 {background-color: lightblue;}
 
 header {background-color: blue;}
     .header-logo {background-color: red;}
@@ -297,4 +298,4 @@ header {background-color: blue;}
 main {background-color: yellow;}
     .control-panel {background-color: blueviolet;}
 
-footer {background-color: green;}*/
+footer {background-color: green;}
