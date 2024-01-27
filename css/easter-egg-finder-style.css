@@ -106,27 +106,27 @@ header {
 
     display:        flex;
     flex-direction: column;
-    row-gap:        5vh;
+    row-gap:        7vh;
 
     width:          auto;
-    height:         85vh;
+    height:         auto;  /*  80vh  */
     padding:        5vh 5vh 0vh 5vh;
 }
 
     .headet-text {
         width:   auto;
-        height:  15vh;
+        height:  20vh;
     }
 
     .header-logo {
         width:   auto;
-        height:  60vh;
+        height:  55vh;
     }
 
         .header-logo-image {
             float:   left;
             width:   auto;
-            height:  60vh;
+            height:  55vh;
         }
 
 @media(max-width: 768px) {
@@ -135,7 +135,6 @@ header {
     
         display:         flex;
         flex-direction:  column;
-        row-gap:         0vh;
 
         width:           auto;
         height:          auto;
@@ -173,7 +172,7 @@ main {
     align-items:      center;
 
     width:     3fr;
-    height:    90vh;
+    height:    auto;
 }
 
 @media(max-width: 768px) {
@@ -266,7 +265,7 @@ footer {
 
     width:      auto;
     height:     auto;
-    padding:    3vh 3vh 3vh 6vh;
+    padding:    3vh 7vh 3vh 3vh;
 
     text-align: right;
 }
@@ -277,7 +276,8 @@ footer {
     
         width:      auto;
         height:     auto;
-        padding:    3vh 3vh 3vh 6vh;
+        padding:    3vh 3vh 3vh 3vh;
+
         text-align: right;
     }
 }
