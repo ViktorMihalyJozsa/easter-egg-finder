@@ -4,7 +4,7 @@
   
 html, body {
     writing-mode: horizontal-tb;
-    
+
     height:        100%;
     width:         100%;
     margin:        0 auto;
@@ -215,7 +215,7 @@ main {
           }
 
               .ui-element {
-                  width:         15vh;
+                  width:         12.5vh;
                   height:        6vh;
                   border-radius: 1.6vh;
                   box-shadow:    1vh 1vh 1vh rgba(0, 0, 0, 0.5);
@@ -226,8 +226,8 @@ main {
                   text-align:     center;
     
                   width:          100%;
-                  font-size:      6vh;
-                  letter-spacing: 2vh;
+                  font-size:      5vh;
+                  letter-spacing: 1vh;
                   font-weight:    bold;
                   color:          rgba(102, 6, 6, 0.75);
                   text-shadow:    1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
