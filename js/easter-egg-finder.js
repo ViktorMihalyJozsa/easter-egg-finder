@@ -15,13 +15,13 @@ const c = canvas.getContext('2d');                   // a canvas contextje
 const width = canvas.width;
 const height = canvas.height;
 
-size = height / 5;    // a mezők mérete (30);
+size = 30;    // a mezők mérete (30);
 
-canvas.width  = (bodyHeight * 0.5) - ((bodyHeight * 0.5) % size);    // a canvas szélessége (Fix:330 Mobile:11square)
-canvas.height = (bodyHeight * 0.65) - ((bodyHeight * 0.65) % size);  // a canvas magassága  (Fix:420 Mobile:14square)
+canvas.width  = (bodyHeight * 0.5) - ((bodyHeight * 0.5) % size);    // a canvas szélessége (Fix:360 Mobile:12square)
+canvas.height = (bodyHeight * 0.65) - ((bodyHeight * 0.65) % size);  // a canvas magassága  (Fix:450 Mobile:15square)
 
-const columns = canvas.width / size;
-const rows = canvas.height / size;
+const columns = 12;  // canvas.width / size;
+const rows = 15;  // canvas.height / size;
 
 /*  ========================================================================  *\
       E N D  C A N V A S  -  S T Y L E
