@@ -15,13 +15,13 @@ const c = canvas.getContext('2d');                   // a canvas contextje
 const width = canvas.width;
 const height = canvas.height;
 
-size = 30;    // a mezők mérete (30);
+size = bodyHeight * 0.04;  // 27.5;    // a mezők mérete (30);
 
-canvas.width  = (bodyHeight * 0.5) - ((bodyHeight * 0.5) % size);    // a canvas szélessége (Fix:360 Mobile:12square)
-canvas.height = (bodyHeight * 0.65) - ((bodyHeight * 0.65) % size);  // a canvas magassága  (Fix:450 Mobile:15square)
+canvas.width  = 12 * size;  // (bodyHeight * 0.5) - ((bodyHeight * 0.5) % size);    // a canvas szélessége (Fix:360-12square Mobile:330-11square)
+canvas.height = 15 * size;  // (bodyHeight * 0.65) - ((bodyHeight * 0.65) % size);  // a canvas magassága  (Fix:450-15square Mobile:420-14square)
 
 const columns = 12;  // canvas.width / size;
-const rows = 15;  // canvas.height / size;
+const rows = 15;     // canvas.height / size;
 
 /*  ========================================================================  *\
       E N D  C A N V A S  -  S T Y L E
@@ -33,7 +33,7 @@ const mineCounter = document.getElementById('mine-count');
 const timeCounter = document.getElementById('time');
 
 const mine = 'mine';
-const mineCount = 6;  // a keresendőek darabszáma
+const mineCount = 8;  // a keresendő tárgyak darabszáma
 const images = {
   'hidden': document.getElementById('hidden'),
   'mine': document.getElementById('exploded-mine'),
