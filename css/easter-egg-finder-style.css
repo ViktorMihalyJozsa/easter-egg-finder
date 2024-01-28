@@ -34,8 +34,8 @@ body {
           background-image:      url("../assets/easter-background.png");
           background-size:       cover;
           background-repeat:     no-repeat;
+          background-position-x: right;
           background-attachment: fixed;
-          background-position:   right;
       }
   }
 
