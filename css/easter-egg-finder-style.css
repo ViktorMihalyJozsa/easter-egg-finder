@@ -3,7 +3,7 @@
 \*  ========================================================================  */
   
 html, body {
-    writing-mode: horizontal-tb;
+    overflow-x:    hidden;
 
     height:        100%;
     width:         100%;
@@ -187,10 +187,10 @@ main {
         width:               1fr;
         height:              87vh;
 
-        background-image:    url("../assets/game-background.png");
+        /*background-image:    url("../assets/game-background.png");
         background-size:     cover;
         background-repeat:   no-repeat;
-        background-position: right;
+        background-position: right;*/
     }
 }
 
@@ -288,7 +288,7 @@ footer {
     T R I A L  B a c k g r o u n d - C o l o r  a n d  - I m a g e
 \*  ========================================================================  */
 
-body {background-color: darkgreen;}
+/*body {background-color: darkgreen;}*/
 
 /*h1, h2 {background-color: lightblue;}
 
