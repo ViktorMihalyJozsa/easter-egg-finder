@@ -182,7 +182,7 @@ header {
         .header-bottom-image {
             position:      absolute;
             float:         left;
-            bottom:        10vh;
+            bottom:        5vh;
 
             width:         auto;
             height:        50vh;
