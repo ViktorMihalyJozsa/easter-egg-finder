@@ -151,11 +151,13 @@ header {
         grid-row:            1;
 
         width:               1fr;
-        height:              90vh;
+        height:              85vh;
+        margin-bottom:       5vh;
         padding:             5vh 2vh 0vh 2vh;
 
+
         background-image:    url("../assets/header-logo.png");
-        background-size:     50vh;
+        background-size:     40vh;
         background-repeat:   no-repeat;
         background-position: bottom left;
     }
@@ -290,7 +292,7 @@ footer {
     T R I A L  B a c k g r o u n d - C o l o r  a n d  - I m a g e
 \*  ========================================================================  */
 
-/*body {background-color: darkgreen;}*/
+body {background-color: darkgreen;}
 
 h1, h2 {background-color: lightblue;}
 
