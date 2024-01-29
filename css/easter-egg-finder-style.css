@@ -136,7 +136,8 @@ header {
 
     width:               3fr;
     height:              auto;
-    padding:             5vh 5vh 5vh 5vh;
+    margin-bottom:       5vh;
+    padding:             5vh 5vh 0vh 5vh;
 
     background-image:    url("../assets/header-logo.png");
     background-size:     50vh;
@@ -188,7 +189,7 @@ main {
         align-items:         center;
     
         width:               1fr;
-        height:              87vh;
+        height:              90vh;
 
         background-image:    url("../assets/game-background.png");
         background-size:     cover;
