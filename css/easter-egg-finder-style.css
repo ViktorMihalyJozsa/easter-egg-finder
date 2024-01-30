@@ -29,8 +29,6 @@ body {
       }
 
       body {
-          overflow-x:            hidden;
-
           background-image:      url("../assets/easter-background.png");
           background-size:       cover;
           background-repeat:     no-repeat;
@@ -50,8 +48,6 @@ body {
       }
 
       body {
-          overflow-x:            hidden;
-
           background-image:      url("../assets/easter-background.png");
           background-size:       cover;
           background-repeat:     no-repeat;
