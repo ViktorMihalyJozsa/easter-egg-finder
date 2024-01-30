@@ -18,6 +18,27 @@ body {
     background-position: right;
   }
 
+  @media(max-width: 1025px) {
+      html, body {
+          width:         100%;
+          height:        100%;
+          margin:        0 auto;
+          padding:       0 auto;
+  
+          font-family:  'Caveat', cursive;
+      }
+
+      body {
+          overflow-x:            hidden;
+
+          background-image:      url("../assets/easter-background.png");
+          background-size:       cover;
+          background-repeat:     no-repeat;
+          background-position-x: right;
+          background-attachment: fixed;
+      }
+  }
+
   @media(max-width: 768px) {
       html, body {
           width:         100%;
@@ -62,26 +83,46 @@ body {
     scrollbar-width:    none;      /* Firefox */
 }
 
-    @media(max-width: 768px) {
-        .container {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            grid-template-areas:
-                "header"
-                "main"
-                "footer";
-        }
-
-        .container::-webkit-scrollbar {    /* Hide scrollbar for Chrome, Safari and Opera */
-            display: none;  
-        }
-
-        .container {                       /* Hide scrollbar for IE, Edge and Firefox */
-            -ms-overflow-style: none;      /* IE and Edge */
-            scrollbar-width:    none;      /* Firefox */
-        }
+@media(max-width: 1025px) {
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 3fr 3fr 2fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            ". header main ."
+            ". header footer .";
     }
+    
+    .container::-webkit-scrollbar {    /* Hide scrollbar for Chrome, Safari and Opera */
+        display: none;  
+    }
+    
+    .container {                       /* Hide scrollbar for IE, Edge and Firefox */
+        -ms-overflow-style: none;      /* IE and Edge */
+        scrollbar-width:    none;      /* Firefox */
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+
+    .container::-webkit-scrollbar {    /* Hide scrollbar for Chrome, Safari and Opera */
+        display: none;  
+    }
+
+    .container {                       /* Hide scrollbar for IE, Edge and Firefox */
+        -ms-overflow-style: none;      /* IE and Edge */
+        scrollbar-width:    none;      /* Firefox */
+    }
+}
 
 
 /*  ========================================================================  *\
