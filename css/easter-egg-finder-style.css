@@ -134,11 +134,7 @@ body {
   }
 
   h1 {text-align: left;}
-  h2 {text-align: right;}
-  @media(max-width: 768px) {
-    h1 {text-align: center;}
-    h2 {text-align: center;}  
-  }
+  h2 {text-align: right;} 
 
   p {
     font-size:       clamp(18px, 3.516vh, 36px);  /*  min.:18px  */
@@ -233,11 +229,14 @@ header {
 @media(max-width: 768px) {
     header {
         grid-area:       header;
+        grid-column:     1;
+        grid-row:        1;
 
         display:         flex;
         flex-direction:  column;
+        justify-self:    center;
 
-        width:           1fr;
+        width:           60vh;
         height:          90vh;
         padding:         5vh 2vh 0vh 2vh;
     }
@@ -415,7 +414,7 @@ footer {
     T R I A L  B a c k g r o u n d - C o l o r  a n d  - I m a g e
 \*  ========================================================================  */
 
-/*body {background-color: darkgreen;}
+body {background-color: darkgreen;}
 
 h1, h2 {background-color: lightblue;}
 
@@ -428,4 +427,4 @@ main {background-color: yellow;}
     .control-panel {background-color: blueviolet;}
 
 footer {background-color: darkgreen;}
-    .footer-image {background-color: lightcoral;}*/
+    .footer-image {background-color: lightcoral;}
