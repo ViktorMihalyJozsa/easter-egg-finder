@@ -236,7 +236,7 @@ header {
         flex-direction:  column;
         justify-self:    center;
 
-        width:           60vh;
+        width:           50vh;
         height:          90vh;
         padding:         5vh 2vh 0vh 2vh;
     }
