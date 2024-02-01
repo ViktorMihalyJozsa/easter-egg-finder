@@ -189,8 +189,8 @@ header {
         .header-top-image {
             float:         right;
 
-            margin-top:    -17vh;
-            margin-right:  -20vh;
+            margin-top:    -3vh;
+            margin-right:  -13vh;
             bottom:        5vh;
             width:         auto;
             height:        40vh;
@@ -229,8 +229,8 @@ header {
             .header-top-image {
                 float:         right;
 
-                margin-top:    -17vh;
-                margin-right:  -20vh;
+                margin-top:    -3vh;
+                margin-right:  -13vh;
                 bottom:        5vh;
                 width:         auto;
                 height:        40vh;
@@ -259,6 +259,11 @@ header {
         width:           45vh;
         height:          90vh;
         padding:         5vh 2vh 0vh 2vh;
+
+        border-right:    0.25vh solid saddlebrown;
+        border-left:     0.25vh solid saddlebrown;
+
+        background-color:  rgba(0, 0, 0, 0.05);
     }
 
     .header-text {
@@ -275,7 +280,7 @@ header {
             float:         right;
 
             margin-top:    0vh;
-            margin-right:  0vh;
+            margin-right:  -2vh;
             bottom:        5vh;
             width:         auto;
             height:        35vh;
