@@ -230,7 +230,7 @@ header {
                 float:         right;
 
                 margin-top:    -17vh;
-                margin-right:  -15vh;
+                margin-right:  -20vh;
                 bottom:        5vh;
                 width:         auto;
                 height:        40vh;
@@ -259,8 +259,6 @@ header {
         width:           45vh;
         height:          90vh;
         padding:         5vh 2vh 0vh 2vh;
-
-        border-right:    0.5vh solid saddlebrown;
     }
 
     .header-text {
@@ -277,7 +275,7 @@ header {
             float:         right;
 
             margin-top:    0vh;
-            margin-right:  -9vh;
+            margin-right:  0vh;
             bottom:        5vh;
             width:         auto;
             height:        35vh;
