@@ -167,13 +167,13 @@ body {
 \*  ========================================================================  */
 
 header {
-    grid-area:    header;
-    grid-column:  2;
-    grid-row:     1 / 3;
+    grid-area:     header;
+    grid-column:   2;
+    grid-row:      1 / 3;
 
-    width:        3fr;
-    height:       auto;
-    padding:      5vh 5vh 0vh 5vh;
+    width:         3fr;
+    height:        auto;
+    padding:       5vh 5vh 0vh 5vh;
 }
 
     .header-text {
@@ -186,13 +186,23 @@ header {
         height:  77vh;
     }
 
+        .header-top-image {
+            float:         right;
+
+            margin-top:    -17vh;
+            margin-right:  -20vh;
+            bottom:        5vh;
+            width:         auto;
+            height:        40vh;
+        }
+
         .header-bottom-image {
             position:  absolute;
             float:     left;
-            bottom:    5vh;
 
+            bottom:    5vh;
             width:     auto;
-            height:    65vh;
+            height:    45vh;
         }
 
 @media(max-width: 1025px) {
@@ -215,14 +225,24 @@ header {
             width:   auto;
             height:  77vh;
         }
+
+            .header-top-image {
+                float:         right;
+
+                margin-top:    -17vh;
+                margin-right:  -15vh;
+                bottom:        5vh;
+                width:         auto;
+                height:        40vh;
+            }
     
             .header-bottom-image {
                 position:  absolute;
                 float:     left;
+                
                 bottom:    5vh;
-    
                 width:     auto;
-                height:    55vh;
+                height:    45vh;
             }
 }
 
@@ -239,6 +259,8 @@ header {
         width:           45vh;
         height:          90vh;
         padding:         5vh 2vh 0vh 2vh;
+
+        border-right:    0.5vh solid saddlebrown;
     }
 
     .header-text {
@@ -251,12 +273,23 @@ header {
         height:  72vh;
     }
 
+        .header-top-image {
+            float:         right;
+
+            margin-top:    0vh;
+            margin-right:  -9vh;
+            bottom:        5vh;
+            width:         auto;
+            height:        35vh;
+        }
+
         .header-bottom-image {
             position:  absolute;
             float:     left;
+
             bottom:    5vh;
             width:     auto;
-            height:    50vh;
+            height:    40vh;
         }
 }
 
@@ -268,12 +301,12 @@ header {
 main {
     grid-area: main;
 
-    display:          flex;
-    justify-content:  center;
-    align-items:      center;
+    display:           flex;
+    justify-content:   center;
+    align-items:       center;
 
-    width:            3fr;
-    height:           auto;
+    width:             3fr;
+    height:            auto;
 }
 
 @media(max-width: 1025px) {
@@ -421,6 +454,7 @@ h1, h2 {background-color: lightblue;}
 header {background-color: blue;}
     .header-text {background-color: lightblue;}
     .header-image {background-color: red;}
+        .header-top-image {background-color: pink;}
         .header-bottom-image {background-color: darkred;}
 
 main {background-color: yellow;}
