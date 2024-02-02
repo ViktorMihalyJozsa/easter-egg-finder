@@ -18,6 +18,7 @@ body {
     background-position:  right;
   }
 
+
   @media(max-width: 1025px) {
       html, body {
           width:         100%;
@@ -36,6 +37,7 @@ body {
           background-attachment:  fixed;
       }
   }
+
 
   @media(max-width: 768px) {
       html, body {
@@ -79,6 +81,7 @@ body {
     scrollbar-width:    none;      /* Firefox */
 }
 
+
 @media(max-width: 1025px) {
     .container {
         display: grid;
@@ -98,6 +101,7 @@ body {
         scrollbar-width:    none;      /* Firefox */
     }
 }
+
 
 @media(max-width: 768px) {
     .container {
@@ -137,7 +141,7 @@ body {
   h2 {text-align: right;} 
 
   p {
-    font-size:       clamp(18px, 3.516vh, 36px);  /*  min.:18px  */
+    font-size:       clamp(15px, 2.777vh, 30px);  /*  min.:15px  */
     letter-spacing:  1px;
     color:           rgba(102, 6, 6, 0.75);
     text-shadow:     1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
@@ -153,7 +157,7 @@ body {
   }
 
   a:hover {
-    font-size:       clamp(20px, 3.906vh, 40px);  /*  min.:15px  */
+    font-size:       clamp(20px, 3.906vh, 40px);  /*  min.:20px  */
     letter-spacing:  4px;
     font-weight:     bold;
     color:           rgba(198, 13, 13, 1);
@@ -173,98 +177,8 @@ header {
 
     width:         3fr;
     height:        auto;
-    padding:       5vh 5vh 0vh 5vh;
+    padding:       10vh 5vh 0vh 5vh;
 }
-
-    .header-text {
-        width:   auto;
-        height:  18vh;
-    }
-
-    .header-image {
-        width:   auto;
-        height:  77vh;
-    }
-
-        .header-top-image {
-            float:         right;
-
-            margin-top:    -3vh;
-            margin-right:  -13vh;
-            bottom:        5vh;
-            width:         auto;
-            height:        40vh;
-        }
-
-        .header-bottom-image {
-            position:  absolute;
-            float:     left;
-
-            bottom:    5vh;
-            width:     auto;
-            height:    45vh;
-        }
-
-@media(max-width: 1025px) {
-    header {
-        grid-area:    header;
-        grid-column:  2;
-        grid-row:     1 / 3;
-    
-        width:        3fr;
-        height:       auto;
-        padding:      5vh 5vh 0vh 5vh;
-    }
-    
-        .header-text {
-            width:   auto;
-            height:  18vh;
-        }
-    
-        .header-image {
-            width:   auto;
-            height:  77vh;
-        }
-
-            .header-top-image {
-                float:         right;
-
-                margin-top:    -3vh;
-                margin-right:  -12vh;
-                bottom:        5vh;
-                width:         auto;
-                height:        40vh;
-            }
-    
-            .header-bottom-image {
-                position:  absolute;
-                float:     left;
-                
-                bottom:    5vh;
-                width:     auto;
-                height:    45vh;
-            }
-}
-
-@media(max-width: 768px) {
-    header {
-        grid-area:       header;
-        grid-column:     1;
-        grid-row:        1;
-
-        display:         flex;
-        flex-direction:  column;
-        justify-self:    center;
-
-        width:           45vh;
-        height:          90vh;
-        padding:         5vh 2vh 0vh 2vh;
-
-        border-right:    0.25vh solid saddlebrown;
-        border-left:     0.25vh solid saddlebrown;
-
-        background-color:  rgba(0, 0, 0, 0.05);
-    }
 
     .header-text {
         width:   auto;
@@ -279,20 +193,131 @@ header {
         .header-top-image {
             float:         right;
 
-            margin-top:    0vh;
-            margin-right:  -2vh;
-            bottom:        5vh;
-            width:         auto;
-            height:        35vh;
+            margin-top:    2vh;
+            margin-right:  -13vh;
+            width:         18.88vh;  /* 236px */
+            height:        40vh;     /* 500px */
+
+            background-image:   url("../assets/header-top-logo.png");
+            background-size:    cover;
+            background-repeat:  no-repeat;
+
         }
 
         .header-bottom-image {
             position:  absolute;
             float:     left;
+           
+            bottom:    0vh;
+            width:     32.4vh;  /* 360px */
+            height:    45vh;    /* 500px */
 
+            background-image:   url("../assets/header-bottom-logo.png");
+            background-size:    cover;
+            background-repeat:  no-repeat;
+        }
+
+
+@media(max-width: 1025px) {
+    header {
+        grid-area:    header;
+        grid-column:  2;
+        grid-row:     1 / 3;
+    
+        width:        3fr;
+        height:       auto;
+        padding:      10vh 5vh 0vh 5vh;
+    }
+    
+        .header-text {
+            width:   auto;
+            height:  18vh;
+        }
+    
+        .header-image {
+            width:   auto;
+            height:  72vh;
+        }
+
+            .header-top-image {
+                float:         right;
+
+                margin-top:    2vh;
+                margin-right:  -13vh;
+                width:         18.88vh;  /* 236px */
+                height:        40vh;     /* 500px */
+
+                background-image:   url("../assets/header-top-logo.png");
+                background-size:    cover;
+                background-repeat:  no-repeat;
+
+            }
+
+            .header-bottom-image {
+                position:           absolute;
+                float:              left;
+           
+                bottom:             0vh;
+                width:              32.4vh;  /* 360px */
+                height:             45vh;    /* 500px */
+
+                background-image:   url("../assets/header-bottom-logo.png");
+                background-size:    cover;
+                background-repeat:  no-repeat;
+            }
+}
+
+
+@media(max-width: 768px) {
+    header {
+        grid-area:       header;
+        grid-column:     1;
+        grid-row:        1;
+
+        display:         flex;
+        flex-direction:  column;
+        justify-self:    end;
+
+        width:           45vh;
+        height:          90vh;
+        padding:         5vh 2vh 0vh 2vh;
+    }
+
+    .header-text {
+        width:   auto;
+        height:  18vh;
+    }
+
+    .header-image {
+        width:   45vh;
+        height:  72vh;
+    }
+
+        .header-top-image {
+            float:              right;
+
+            margin-top:         0vh;
+            margin-right:       -2vh;
+            width:              16.52vh;  /* 236px */
+            height:             35vh;     /* 500px */
+
+            background-image:   url("../assets/header-top-logo.png");
+            background-size:    cover;
+            background-repeat:  no-repeat;
+
+        }
+
+        .header-bottom-image {
+            position:  absolute;
+            float:     left;
+   
             bottom:    5vh;
-            width:     auto;
-            height:    40vh;
+            width:     28.8vh;  /* 360px */
+            height:    40vh;    /* 500px */
+
+            background-image:   url("../assets/header-bottom-logo.png");
+            background-size:    cover;
+            background-repeat:  no-repeat;
         }
 }
 
@@ -312,6 +337,7 @@ main {
     height:            auto;
 }
 
+
 @media(max-width: 1025px) {
     main {
         grid-area: main;
@@ -324,6 +350,7 @@ main {
         height:           auto;
     }
 }
+
 
 @media(max-width: 768px) {
     main {
@@ -403,6 +430,7 @@ main {
 
       .canvas-element {
         box-shadow:  1vh 1vh 1vh rgba(0, 0, 0, 0.5);
+        z-index:     100;
       }
 
 
@@ -411,26 +439,64 @@ main {
 \*  ========================================================================  */
 
 footer {
-    grid-area:  footer;
+    grid-area:       footer;
 
-    width:       auto;
-    height:      auto;
-    padding:     3vh 7vh 3vh 3vh;
+    width:           auto;
+    height:          auto;
+    padding:         3vh 0vh 0vh 7vh;
 
-    text-align:  right;
+    text-align:      left;
 }
+
+    .footer-text {
+        width:   auto;
+        height:  auto;
+    }
+
+    .footer-image {
+        float:              right;
+
+        margin-top:         -18vh;
+        margin-right:       -18vh;
+        width:              25.6vh;  /* 400px */
+        height:             32vh;    /* 500px */
+
+        background-image:   url("../assets/footer-logo.png");
+        background-size:    cover;
+        background-repeat:  no-repeat;
+    }
+
 
 @media(max-width: 1025px) {
     footer {
-        grid-area:   footer;
+        grid-area:       footer;
     
-        width:       auto;
-        height:      auto;
-        padding:     3vh 7vh 3vh 3vh;
+        width:           auto;
+        height:          auto;
+        padding:         3vh 0vh 0vh 7vh;
     
-        text-align:  right;
+        text-align:      left;
     }
+    
+        .footer-text {
+            width:   auto;
+            height:  auto;
+        }
+    
+        .footer-image {
+            float:              right;
+    
+            margin-top:         -18vh;
+            margin-right:       -18vh;
+            width:              25.6vh;  /* 400px */
+            height:             32vh;    /* 500px */
+    
+            background-image:   url("../assets/footer-logo.png");
+            background-size:    cover;
+            background-repeat:  no-repeat;
+        }
 }
+
 
 @media(max-width: 768px) {
     footer {
@@ -438,11 +504,35 @@ footer {
     
         width:             auto;
         height:            auto;
-        padding:           3vh 3vh 3vh 3vh;
+        padding:           3vh 0vh 0vh 7vh;
 
         background-color:  darkgreen;
-        text-align:        center;
+        text-align:        left;
+
+        z-index:           70;
     }
+    
+        .footer-text {
+            width:    auto;
+            height:   auto;
+
+            z-index:  80;
+        }
+    
+        .footer-image {
+            float:              right;
+    
+            margin-top:         -23vh;
+            margin-right:       0vh;
+            width:              17.08vh;  /* 305px */
+            height:             28vh;     /* 500px */
+    
+            background-image:   url("../assets/footer-logo-mobil.png");
+            background-size:    cover;
+            background-repeat:  no-repeat;
+
+            z-index:            90;
+        }
 }
 
 
@@ -464,4 +554,5 @@ main {background-color: yellow;}
     .control-panel {background-color: blueviolet;}
 
 footer {background-color: darkgreen;}
+.footer-text {background-color: aqua;}
     .footer-image {background-color: lightcoral;}*/
