@@ -177,12 +177,16 @@ header {
 
     width:         3fr;
     height:        auto;
-    padding:       10vh 5vh 0vh 5vh;
+    padding:       5vh 5vh 0vh 5vh;
+
+
 }
 
     .header-text {
-        width:   auto;
-        height:  18vh;
+        width:       auto;
+        height:      18vh;
+
+        text-align:  left;
     }
 
     .header-image {
@@ -226,12 +230,14 @@ header {
     
         width:        3fr;
         height:       auto;
-        padding:      10vh 5vh 0vh 5vh;
+        padding:      5vh 5vh 0vh 5vh;
     }
     
         .header-text {
-            width:   auto;
-            height:  18vh;
+            width:       auto;
+            height:      18vh;
+
+            text-align:  left;
         }
     
         .header-image {
@@ -283,8 +289,10 @@ header {
     }
 
     .header-text {
-        width:   auto;
-        height:  18vh;
+        width:       auto;
+        height:      18vh;
+
+        text-align:  right;
     }
 
     .header-image {
