@@ -292,7 +292,7 @@ header {
         width:       auto;
         height:      18vh;
 
-        text-align:  right;
+        text-align:  left;
     }
 
     .header-image {
@@ -301,28 +301,27 @@ header {
     }
 
         .header-top-image {
-            float:              left;
-            left:               0vw;
+            float:              right;
+            right:              0vw;
 
             width:              16.52vh;  /* 236px */
             height:             35vh;     /* 500px */
             margin-top:         0vh;
-            margin-left:        -2vh;
+            margin-right:       -2vh;
 
-            background-image:   url("../assets/header-top-logo-mobil.png");
+            background-image:   url("../assets/header-top-logo.png");
             background-size:    cover;
             background-repeat:  no-repeat;
 
         }
 
         .header-bottom-image {
-            float:              right;
-            right:              10vw;
+            float:              left;
             bottom:             0vh;
 
             width:              28.8vh;  /* 360px */
             height:             40vh;    /* 500px */
-            margin-right:       -2vh;
+            margin-left:        0vh;
 
             background-image:   url("../assets/header-bottom-logo.png");
             background-size:    cover;
