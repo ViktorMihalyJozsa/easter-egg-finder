@@ -276,9 +276,8 @@ header {
 
         display:         flex;
         flex-direction:  column;
-        justify-self:    end;
 
-        width:           45vh;
+        width:           1fr;
         height:          90vh;
         padding:         5vh 2vh 0vh 2vh;
     }
@@ -294,23 +293,23 @@ header {
     }
 
         .header-top-image {
-            float:              right;
+            float:              left;
+            left:               0;
 
             margin-top:         0vh;
-            margin-right:       -2vh;
+            margin-left:        -2vh;
             width:              16.52vh;  /* 236px */
             height:             35vh;     /* 500px */
 
-            background-image:   url("../assets/header-top-logo.png");
+            background-image:   url("../assets/header-top-logo-mobil.png");
             background-size:    cover;
             background-repeat:  no-repeat;
 
         }
 
         .header-bottom-image {
-            position:  absolute;
-            float:     left;
-   
+            float:     right;
+            right:     25vw;
             bottom:    0vh;
             width:     28.8vh;  /* 360px */
             height:    40vh;    /* 500px */
