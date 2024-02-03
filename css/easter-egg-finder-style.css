@@ -294,7 +294,7 @@ header {
 
         .header-top-image {
             float:              left;
-            left:               0;
+            left:               0vw;
 
             width:              16.52vh;  /* 236px */
             height:             35vh;     /* 500px */
@@ -309,11 +309,12 @@ header {
 
         .header-bottom-image {
             float:              right;
-            right:              20vw;
+            right:              10vw;
             bottom:             0vh;
 
             width:              28.8vh;  /* 360px */
             height:             40vh;    /* 500px */
+            margin-right:       -2vh;
 
             background-image:   url("../assets/header-bottom-logo.png");
             background-size:    cover;
