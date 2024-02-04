@@ -348,8 +348,8 @@ header {
             .header-top-image-text {
                 float:    left;
 
-                width:    70%;   /*  32vh;  /*  FHD-456px=42vh ~ MINUS: 2*Header-padding(2*2vh=4vh)+8vh !!!  2/3fr=66.666%  */
-                height:   37vh;  /*  FHD-400px=37vh                                                                         */
+                width:    64vw;  /*  Mobil(1600x720)-456px/13.2=34vh ~ MINUS: Header-padding(2vh)=32vh !!!  2/3fr=66.666%  */
+                height:   auto;
 
                 z-index:  20;
             }
@@ -366,7 +366,7 @@ header {
                 background-size:    cover;
                 background-repeat:  no-repeat;
 
-                z-index: 10;
+                z-index:            10;
             }
 
             .header-bottom-image {
@@ -381,7 +381,7 @@ header {
                 background-size:    cover;
                 background-repeat:  no-repeat;
 
-                z-index: 10;
+                z-index:            10;
             }
 
             .header-bottom-image-text {
@@ -619,7 +619,7 @@ footer {
     T R I A L  B a c k g r o u n d - C o l o r  a n d  - I m a g e
 \*  ========================================================================  */
 
-/*body {background-color: darkgreen; z-index: 0;}
+body {background-color: darkgreen; z-index: 0;}
 
 h1, h2 {background-color: lightblue; z-index: 0;}
 
@@ -636,4 +636,4 @@ main {background-color: yellow; z-index: 0;}
 
 footer {background-color: darkgreen; z-index: 0;}
     .footer-text {background-color: aqua; z-index: 0;}
-    .footer-image {background-color: lightcoral; z-index: 0;}*/
+    .footer-image {background-color: lightcoral; z-index: 0;}
