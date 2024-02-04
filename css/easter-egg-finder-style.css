@@ -195,7 +195,7 @@ header {
         .header-top-image-text {
             float:    left;
 
-            width:    48vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw 
+            width:    43vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw 
                                      ~ MINUS: .header-padding(2vh); PLUS: .myCanvas"padding"(ca.:8vh); !!!  */
             height:   37vh;  /*  FHD-400px=(37.685vh)37vh                                                   */
 
@@ -206,9 +206,9 @@ header {
             float:              right;
 
             margin-top:         0vh;
-            margin-right:       -10vh;  /*  -2vh-8vh(canvas"padding")= -10vh                        */
-            width:              20vh;   /*  FHD-224px=(20.740vh)20vh (img:280px)  1fr = 10% = 10vw  */
-            height:             37vh;   /*  FHD-400px=(37.685vh)37vh (img:500px)                    */
+            margin-right:       -10vh;     /*  -2vh-8vh(canvas"padding")= -10vh                 */
+            width:              17.777vh;  /*  FHD-192px=17.777vh (img:240px) 1fr = 10% = 10vw  */
+            height:             37.037vh;  /*  FHD-400px=37.037vh (img:500px)                   */
 
             background-image:   url("../assets/header-top-logo.png");
             background-size:    cover;
@@ -267,26 +267,26 @@ header {
     
             .header-top-image-text {
                 float:    left;
-    
-                width:    48vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw 
-                                         ~ MINUS: .header-padding(2vh); PLUS: .myCanvas"padding"(ca.:8vh); !!!  */
+
+                width:    43vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw 
+                                     ~ MINUS: .header-padding(2vh); PLUS: .myCanvas"padding"(ca.:8vh); !!!  */
                 height:   37vh;  /*  FHD-400px=(37.685vh)37vh                                                   */
-    
+
                 z-index:  20;
             }
-    
+
             .header-top-image {
                 float:              right;
-    
+
                 margin-top:         0vh;
-                margin-right:       -10vh;  /*  -2vh-8vh(canvas"padding")= -10vh                        */
-                width:              20vh;   /*  FHD-224px=(20.740vh)20vh (img:280px)  1fr = 10% = 10vw  */
-                height:             37vh;   /*  FHD-400px=(37.685vh)37vh (img:500px)                    */
-    
+                margin-right:       -10vh;     /*  -2vh-8vh(canvas"padding")= -10vh                 */
+                width:              17.777vh;  /*  FHD-192px=17.777vh (img:240px) 1fr = 10% = 10vw  */
+                height:             37.037vh;  /*  FHD-400px=37.037vh (img:500px)                   */
+
                 background-image:   url("../assets/header-top-logo.png");
                 background-size:    cover;
                 background-repeat:  no-repeat;
-    
+
                 z-index: 10;
             }
     
@@ -354,9 +354,9 @@ header {
                 float:              right;
 
                 margin-top:         0vh;
-                margin-right:       -2vh;  /*  MINUS margin-right(NOT Minus .myCanvas"padding") = -2vh          */
-                width:              17vh;  /*  FHD-224px=(20.740vh)20vh*0.85=17vh (img:280px) 1fr = 10% = 10vw  */
-                height:             31vh;  /*  FHD-400px=(37.685vh)37vh*0.85=31vh (img:500px)                   */
+                margin-right:       -2vh;     /*  MINUS margin-right(NOT Minus .myCanvas"padding") = -2vh       */
+                width:              15.11vh;  /*  FHD-192px=17.777vh*0.85=15.11vh (img:240px) 1fr = 10% = 10vw  */
+                height:             31.48vh;  /*  FHD-400px=37.037vh*0.85=31.48vh (img:500px)                   */
 
                 background-image:   url("../assets/header-top-logo.png");
                 background-size:    cover;
