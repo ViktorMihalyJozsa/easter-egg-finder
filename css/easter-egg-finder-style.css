@@ -348,8 +348,8 @@ header {
             .header-top-image-text {
                 float:    left;
 
-                width:    66%;  /*  32vh;  /*  FHD-456px=42vh ~ MINUS: 2*Header-padding(2*2vh=4vh)+8vh !!!  2/3fr=66.666% */
-                height:   37vh;   /*  FHD-400px=37vh                                                             */
+                width:    66%;   /*  32vh;  /*  FHD-456px=42vh ~ MINUS: 2*Header-padding(2*2vh=4vh)+8vh !!!  2/3fr=66.666%  */
+                height:   37vh;  /*  FHD-400px=37vh                                                                         */
 
                 z-index:  20;
             }
