@@ -135,6 +135,7 @@ body {
     font-weight:     bold;
     color:           rgba(198, 13, 13, 1);
     text-shadow:     2px 2px rgba(255, 255, 255, 0.75), -1px -1px #444;
+    z-index:         20;
   }
 
   h1 {text-align: left;}
@@ -145,6 +146,7 @@ body {
     letter-spacing:  1px;
     color:           rgba(102, 6, 6, 0.75);
     text-shadow:     1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
+    z-index:         20;
   } 
 
   a {
@@ -154,6 +156,7 @@ body {
     font-weight:      bold;
     color:            rgba(198, 13, 13, 1);
     text-shadow:      1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
+    z-index:          20;
   }
 
   a:hover {
@@ -163,6 +166,7 @@ body {
     color:           rgba(198, 13, 13, 1);
     text-shadow:     1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
     transition:      all 0.5s ease-in-out;
+    z-index:         20;
   }
 
 
@@ -344,8 +348,8 @@ header {
             .header-top-image-text {
                 float:    left;
 
-                width:    32vh;  /*  FHD-456px=42vh ~ MINUS: 2*Header-padding(2*2vh=4vh)+8vh !!! 2fr=20%=20vw */
-                height:   37vh;  /*  FHD-400px=37vh                                                           */
+                width:    66%;  /*  32vh;  /*  FHD-456px=42vh ~ MINUS: 2*Header-padding(2*2vh=4vh)+8vh !!!  2/3fr=66.666% */
+                height:   37vh;   /*  FHD-400px=37vh                                                             */
 
                 z-index:  20;
             }
@@ -354,9 +358,9 @@ header {
                 float:              right;
 
                 margin-top:         0vh;
-                margin-right:       -2vh;     /*  MINUS margin-right(NOT Minus .myCanvas"padding") = -2vh       */
-                width:              15.11vh;  /*  FHD-192px=17.777vh*0.85=15.11vh (img:240px) 1fr = 10% = 10vw  */
-                height:             31.48vh;  /*  FHD-400px=37.037vh*0.85=31.48vh (img:500px)                   */
+                margin-right:       -2vh;     /*  MINUS: margin-right(NOT Minus .myCanvas"padding") = -2vh    */
+                width:              15.11vh;  /*  FHD-192px=17.777vh*0.85=15.11vh (img:240px)  1/3fr=33.333%  */
+                height:             31.48vh;  /*  FHD-400px=37.037vh*0.85=31.48vh (img:500px)                 */
 
                 background-image:   url("../assets/header-top-logo.png");
                 background-size:    cover;
@@ -615,7 +619,7 @@ footer {
     T R I A L  B a c k g r o u n d - C o l o r  a n d  - I m a g e
 \*  ========================================================================  */
 
-/*body {background-color: darkgreen; z-index: 0;}
+body {background-color: darkgreen; z-index: 0;}
 
 h1, h2 {background-color: lightblue; z-index: 0;}
 
@@ -632,4 +636,4 @@ main {background-color: yellow; z-index: 0;}
 
 footer {background-color: darkgreen; z-index: 0;}
     .footer-text {background-color: aqua; z-index: 0;}
-    .footer-image {background-color: lightcoral; z-index: 0;}*/
+    .footer-image {background-color: lightcoral; z-index: 0;}
