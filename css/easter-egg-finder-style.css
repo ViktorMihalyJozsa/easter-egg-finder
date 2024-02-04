@@ -130,7 +130,7 @@ body {
 \*  ========================================================================  */
 
   h1, h2 {
-    font-size:       9.259vh;  /*  100px - min.:36px  */
+    font-size:       max(24px, 9.259vh);  /*  min.:24px - ca.:100px  */
     letter-spacing:  1vh;
     font-weight:     bold;
     color:           rgba(198, 13, 13, 1);
@@ -141,7 +141,7 @@ body {
   h2 {text-align: right;} 
 
   p {
-    font-size:       clamp(14px, 2.777vh, 30px);  /*  min.:14px  */
+    font-size:       max(14px, 2.777vh);  /*  min.:14px - ca.:30px  */
     letter-spacing:  1px;
     color:           rgba(102, 6, 6, 0.75);
     text-shadow:     1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
@@ -149,7 +149,7 @@ body {
 
   a {
     text-decoration:  none;
-    font-size:        clamp(18px, 3.516vh, 36px);  /*  min.:18px  */
+    font-size:        max(18px, 3.516vh);  /*  min.:18px - ca.:36px  */
     letter-spacing:   2px;
     font-weight:      bold;
     color:            rgba(198, 13, 13, 1);
@@ -157,7 +157,7 @@ body {
   }
 
   a:hover {
-    font-size:       clamp(20px, 3.906vh, 40px);  /*  min.:20px  */
+    font-size:       max(20px, 3.906vh);  /*  min.:20px - ca.:40px  */
     letter-spacing:  4px;
     font-weight:     bold;
     color:           rgba(198, 13, 13, 1);
