@@ -175,11 +175,9 @@ header {
     grid-column:   2;
     grid-row:      1 / 3;
 
-    width:         3fr;  /*  FHD(1920x1080) 3fr=30%=30vw  */
+    width:         3fr;  /*  FHD(1920x1080) 3fr = 30% = 30vw  */
     height:        auto;
     padding:       5vh 2vh 0vh 2vh;
-
-
 }
 
     .header-text {
@@ -197,9 +195,9 @@ header {
         .header-top-image-text {
             float:    left;
 
-            width:    48vh;      /*  FHD=456px=42.222vh 2fr=20%=20vw 
+            width:    48vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw 
                                      ~ MINUS: .header-padding(2vh); PLUS: .myCanvas"padding"(ca.:8vh); !!!  */
-            height:   37.685vh;  /*  FHD=407px=37.685vh                                                     */
+            height:   37vh;  /*  FHD-400px=(37.685vh)37vh                                                   */
 
             z-index:  20;
         }
@@ -208,9 +206,9 @@ header {
             float:              right;
 
             margin-top:         0vh;
-            margin-right:       -10vh;     /*  -2vh-8vh(canvas"padding")=-10vh              */
-            width:              21vh;      /*  FHD=228px=21.111vh (img:280px) 1fr=10%=10vw  */
-            height:             37.685vh;  /*  FHD=407px=37.685vh (img:500px)               */
+            margin-right:       -10vh;  /*  -2vh-8vh(canvas"padding")= -10vh                        */
+            width:              20vh;   /*  FHD-224px=(20.740vh)20vh (img:280px)  1fr = 10% = 10vw  */
+            height:             37vh;   /*  FHD-400px=(37.685vh)37vh (img:500px)                    */
 
             background-image:   url("../assets/header-top-logo.png");
             background-size:    cover;
@@ -224,8 +222,8 @@ header {
             float:              left;
            
             bottom:             0vh;
-            width:              32.4vh;  /* 360px */
-            height:             45vh;    /* 500px */
+            width:              32.4vh;  /*  FHD-350px=32.4vh (img:360px)  */
+            height:             45vh;    /*  FHD-486px=45vh   (img:500px)  */
 
             background-image:   url("../assets/header-bottom-logo.png");
             background-size:    cover;
@@ -253,8 +251,6 @@ header {
         width:         3fr;  /*  FHD(1920x1080) 3fr=30%=30vw  */
         height:        auto;
         padding:       5vh 2vh 0vh 2vh;
-    
-    
     }
     
         .header-text {
@@ -272,9 +268,9 @@ header {
             .header-top-image-text {
                 float:    left;
     
-                width:    48vh;      /*  FHD=456px=42.222vh 2fr=20%=20vw 
+                width:    48vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw 
                                          ~ MINUS: .header-padding(2vh); PLUS: .myCanvas"padding"(ca.:8vh); !!!  */
-                height:   37.685vh;  /*  FHD=407px=37.685vh                                                     */
+                height:   37vh;  /*  FHD-400px=(37.685vh)37vh                                                   */
     
                 z-index:  20;
             }
@@ -283,9 +279,9 @@ header {
                 float:              right;
     
                 margin-top:         0vh;
-                margin-right:       -10vh;     /*  -2vh-8vh(canvas"padding")= -10vh             */
-                width:              21vh;      /*  FHD=228px=21.111vh (img:280px) 1fr=10%=10vw  */
-                height:             37.685vh;  /*  FHD=407px=37.685vh (img:500px)               */
+                margin-right:       -10vh;  /*  -2vh-8vh(canvas"padding")= -10vh                        */
+                width:              20vh;   /*  FHD-224px=(20.740vh)20vh (img:280px)  1fr = 10% = 10vw  */
+                height:             37vh;   /*  FHD-400px=(37.685vh)37vh (img:500px)                    */
     
                 background-image:   url("../assets/header-top-logo.png");
                 background-size:    cover;
@@ -299,8 +295,8 @@ header {
                 float:              left;
                
                 bottom:             0vh;
-                width:              32.4vh;  /* 360px */
-                height:             45vh;    /* 500px */
+                width:              32.4vh;  /*  FHD-350px=32.4vh (img:360px)  */
+                height:             45vh;    /*  FHD-486px=45vh   (img:500px)  */
     
                 background-image:   url("../assets/header-bottom-logo.png");
                 background-size:    cover;
@@ -348,8 +344,8 @@ header {
             .header-top-image-text {
                 float:    left;
 
-                width:    38vh;      /*  FHD=456px=42.222vh 2fr=20%=20vw ~ MINUS: 2*Header-padding(2*2vh=4vh) !!!  */
-                height:   37.685vh;  /*  FHD=407px=37.685vh                                                        */
+                width:    30vh;  /*  FHD-456px=42vh ~ MINUS: 2*Header-padding(2*2vh=4vh)+8vh !!! 2fr=20%=20vw */
+                height:   37vh;  /*  FHD-400px=37vh                                                           */
 
                 z-index:  20;
             }
@@ -358,9 +354,9 @@ header {
                 float:              right;
 
                 margin-top:         0vh;
-                margin-right:       -2vh;    /*  MINUS margin-right(NOT Minus .myCanvas"padding") = -2vh           */
-                width:              18.9vh;  /*  FHD=228px=(21.111vh)21vh*0.9=18.9vh (img:280px) 1fr = 10% = 10vw  */
-                height:             33.3vh;  /*  FHD=407px=(37.685vh)37vh*0.9=33.3vh (img:500px)                   */
+                margin-right:       -2vh;  /*  MINUS margin-right(NOT Minus .myCanvas"padding") = -2vh          */
+                width:              17vh;  /*  FHD-224px=(20.740vh)20vh*0.85=17vh (img:280px) 1fr = 10% = 10vw  */
+                height:             31vh;  /*  FHD-400px=(37.685vh)37vh*0.85=31vh (img:500px)                   */
 
                 background-image:   url("../assets/header-top-logo.png");
                 background-size:    cover;
@@ -374,8 +370,8 @@ header {
                 float:              left;
            
                 bottom:             0vh;
-                width:              29.16vh;  /*  32.4vh*0.9=29.16vh (img:360px)  */
-                height:             40.5vh;   /*  45vh*0.9=40.5vh      (img:500px)  */
+                width:              27.54vh;  /*  FHD-350px=32.4vh*0.85=27.54vh (img:360px)  */
+                height:             38.25vh;  /*  FHD-486px=45vh*0.85=38.25vh (img:500px)  */
 
                 background-image:   url("../assets/header-bottom-logo.png");
                 background-size:    cover;
@@ -603,8 +599,8 @@ footer {
     
             margin-top:         -23vh;
             margin-right:       0vh;
-            width:              17.08vh;  /* 305px */
-            height:             28vh;     /* 500px */
+            width:              16.592vh;  /*  19.52vh*0.85=16.592vh (img:305px)  */
+            height:             27.2vh;    /*  32vh*0.85=27.2vh      (img:500px)  */
     
             background-image:   url("../assets/footer-logo-mobil.png");
             background-size:    cover;
