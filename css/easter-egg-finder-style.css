@@ -224,8 +224,9 @@ header {
         .header-bottom-image {
             position:           absolute;
             float:              left;
-           
+            left:               2fr;
             bottom:             0vh;
+
             width:              32.4vh;  /*  FHD-350px=32.4vh (img:360px)  */
             height:             45vh;    /*  FHD-486px=45vh   (img:500px)  */
 
@@ -295,9 +296,10 @@ header {
             }
     
             .header-bottom-image {
+                position:           absolute;
                 float:              left;
                 left:               2fr;
-                margin-bottom:      -10vh;
+                bottom:             -5vh;
 
                 width:              32.4vh;  /*  FHD-350px=32.4vh (img:360px)  */
                 height:             45vh;    /*  FHD-486px=45vh   (img:500px)  */
@@ -372,8 +374,9 @@ header {
             .header-bottom-image {
                 position:           absolute;
                 float:              left;
-           
+                left:               0vh;
                 bottom:             0vh;
+
                 width:              27.54vh;  /*  FHD-350px=32.4vh*0.85=27.54vh (img:360px)  */
                 height:             38.25vh;  /*  FHD-486px=45vh*0.85=38.25vh (img:500px)  */
 
