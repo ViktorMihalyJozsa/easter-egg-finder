@@ -297,7 +297,7 @@ header {
             .header-bottom-image {
                 float:              left;
                 left:               2fr;
-                margin-bottom:      0vh;
+                margin-bottom:      -10vh;
 
                 width:              32.4vh;  /*  FHD-350px=32.4vh (img:360px)  */
                 height:             45vh;    /*  FHD-486px=45vh   (img:500px)  */
@@ -565,8 +565,8 @@ footer {
         .footer-image {
             float:              right;
     
-            margin-top:         -18vh;
-            margin-right:       -18vh;
+            margin-top:         -16vh;
+            margin-right:       -20vh;
             width:              25.6vh;  /* 400px */
             height:             32vh;    /* 500px */
     
