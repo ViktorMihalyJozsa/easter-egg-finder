@@ -12,7 +12,7 @@ html, body {
   }
   
 body {
-    background-image:     url("../assets/easter-background.png");
+    background-image:     url("../assets/body-background.png");
     background-size:      cover;
     background-repeat:    no-repeat;
     background-position:  right;
@@ -30,7 +30,7 @@ body {
       }
 
       body {
-          background-image:       url("../assets/easter-background.png");
+          background-image:       url("../assets/body-background.png");
           background-size:        cover;
           background-repeat:      no-repeat;
           background-position-x:  right;
@@ -50,7 +50,7 @@ body {
       }
 
       body {
-          background-image:       url("../assets/easter-background.png");
+          background-image:       url("../assets/body-background.png");
           background-size:        cover;
           background-repeat:      no-repeat;
           background-position-x:  right;

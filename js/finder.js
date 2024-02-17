@@ -1,39 +1,36 @@
 /*  ========================================================================  *\
-      E A S T E R   E G G   F I N D  -  J A V A S C R I P T
+      E A S T E R   E G G   F I N D E R
+      J A V A S C R I P T  C O D E
 \*  ========================================================================  */
-
 
 /*  ========================================================================  *\
       C A N V A S  -  S T Y L E
 \*  ========================================================================  */
 
-const bodyWidth = document.body.clientWidth;    // a body szélessége
-const bodyHeight = document.body.clientHeight;  // a body magassága
+const bodyWidth = document.body.clientWidth;         // a body szélessége
+const bodyHeight = document.body.clientHeight;       // a body magassága
 
 const canvas = document.getElementById('myCanvas');  // a canvas elem
 const c = canvas.getContext('2d');                   // a canvas contextje
-const width = canvas.width;
-const height = canvas.height;
+const width = canvas.width;                          // a szélesség
+const height = canvas.height;                        // a magasság
 
-size = bodyHeight * 0.04;  // 27.5;    // a mezők mérete (30);
+size = bodyHeight * 0.04;                            // 27.5 - a mezők mérete;
 
-canvas.width  = 12 * size;  // (bodyHeight * 0.5) - ((bodyHeight * 0.5) % size);    // a canvas szélessége (Fix:360-12square Mobile:330-11square)
-canvas.height = 15 * size;  // (bodyHeight * 0.65) - ((bodyHeight * 0.65) % size);  // a canvas magassága  (Fix:450-15square Mobile:420-14square)
+canvas.width  = 12 * size;                           // a canvas szélessége
+canvas.height = 15 * size;                           // a canvas magassága
 
-const columns = 12;  // canvas.width / size;
-const rows = 15;     // canvas.height / size;
-
-/*  ========================================================================  *\
-      E N D  C A N V A S  -  S T Y L E
-\*  ========================================================================  */
-
+const columns = 12;                                  // oszlopok darabszáma
+const rows = 15;                                     // sorok darabszáma
 
 const actionButton = document.getElementById('action-button');
 const mineCounter = document.getElementById('mine-count');
 const timeCounter = document.getElementById('time');
 
 const mine = 'mine';
-const mineCount = 8;  // a keresendő tárgyak darabszáma
+
+const mineCount = 8;                                // a keresendő tárgyak darabszáma
+
 const images = {
   'hidden': document.getElementById('hidden'),
   'mine': document.getElementById('exploded-mine'),
@@ -48,12 +45,19 @@ const images = {
   '6': document.getElementById('field-6'),
   '7': document.getElementById('field-7'),
   '8': document.getElementById('field-8'),
-};
+}
+
 const buttons = {
   start: 'assets/button-start.png',
   lost: 'assets/button-lost.png',
   won: 'assets/button-won.png',
 }
+
+
+/*  ========================================================================  *\
+      G A M E  L O G I C  a n d  F U N C T I O N S
+\*  ========================================================================  */
+
 let isGameOver;
 let isFirstClick;
 let exploredFields;
@@ -93,13 +97,13 @@ canvas.addEventListener('contextmenu', function(event) {
     let flaggedNeighbours = countFlaggedNeighbours(neighbourCoordinates);
     if (flaggedNeighbours === map[row][col]) {
       for (let i = 0; i < neighbourCoordinates.length; i++) {
-        let coordinate = neighbourCoordinates[i]; // {row: 7, col: 1
-        exploreField(coordinate.row, coordinate.col); // rekurzió
+        let coordinate = neighbourCoordinates[i];                          // {row: 7, col: 1
+        exploreField(coordinate.row, coordinate.col);                      // rekurzió
       }
     }
   } else {
     flagMap[row][col] = !flagMap[row][col];
-    remainingMines += flagMap[row][col] ? -1 : 1; // ternary operator
+    remainingMines += flagMap[row][col] ? -1 : 1;                         // ternary operator
     mineCounter.innerText = convertNumberTo3DigitString(remainingMines);
   }
   drawMap();
@@ -174,8 +178,8 @@ function exploreField(row, col) {
     if (map[row][col] === 0) {
       let neighbourCoordinates = findNeighbourFields(map, row, col);
       for (let i = 0; i < neighbourCoordinates.length; i++) {
-        let coordinate = neighbourCoordinates[i]; // {row: 7, col: 1}
-        exploreField(coordinate.row, coordinate.col); // rekurzió
+        let coordinate = neighbourCoordinates[i];                     // {row: 7, col: 1}
+        exploreField(coordinate.row, coordinate.col);                 // rekurzió
       }
     }
   }
@@ -186,7 +190,7 @@ function calculateFieldValues(map) {
     for (let colI = 0; colI < columns; colI++) {
       let field = map[rowI][colI];
       if (field !== mine) {
-        let neighbourCoordinates = findNeighbourFields(map, rowI, colI); // [{row: 7, col: 1}, {row: 7, col: 2}, ...]
+        let neighbourCoordinates = findNeighbourFields(map, rowI, colI);  // [{row: 7, col: 1}, {row: 7, col: 2}, ...]
         let mineCount = countMines(map, neighbourCoordinates);
         map[rowI][colI] = mineCount;
       }
@@ -197,7 +201,7 @@ function calculateFieldValues(map) {
 function countMines(map, coordinates) {
   let mineCount = 0;
   for (let i = 0; i < coordinates.length; i++) {
-    let coordinate = coordinates[i]; // {row: 7, col: 1}
+    let coordinate = coordinates[i];                  // {row: 7, col: 1}
     let field = map[coordinate.row][coordinate.col];
     if (field === mine) {
       mineCount++;
@@ -209,7 +213,7 @@ function countMines(map, coordinates) {
 function countFlaggedNeighbours(coordinates) {
   let flaggedNeighbours = 0;
   for (let i = 0; i < coordinates.length; i++) {
-    let coordinate = coordinates[i]; // {row: 7, col: 1}
+    let coordinate = coordinates[i];                // {row: 7, col: 1}
     if (flagMap[coordinate.row][coordinate.col]) {
       flaggedNeighbours++;
     }
@@ -303,7 +307,7 @@ function convertNumberTo3DigitString(number) {
 
 
 /*  ========================================================================  *\
-      L O A D I N G  -  F U N C T I O N
+     L O A D I N G  -  F U N C T I O N
 \*  ========================================================================  */
 
 // Ez a függvény megvárja, amíg az összes kép betöltődik:
