@@ -3,42 +3,81 @@
 \*  ========================================================================  */
 
 h1, h2 {
-    font-size:       max(24px, 9.259vh);  /*  min.:24px - ca.:100px  */
+    font-size:       6vh;  /*max(42px, 6vh);  /*  min.:40px - ca.:100px  */
     letter-spacing:  1vh;
-    font-weight:     bold;
-    color:           rgba(198, 13, 13, 1);
-    text-shadow:     2px 2px rgba(255, 255, 255, 0.75), -1px -1px #444;
+    font-weight:     bolder;
+    color:           rgba(139, 0, 0, 1);
+    text-shadow:     1vh 1vh 1vh rgba(68, 68, 68, 1), -0.2vh -0.2vh red;
+    
     z-index:         20;
   }
 
       h1 {text-align: left;}
       h2 {text-align: right;} 
 
-  p {
-    font-size:       max(14px, 2.777vh);  /*  min.:14px - ca.:30px  */
-    letter-spacing:  1px;
-    color:           rgba(102, 6, 6, 0.75);
-    text-shadow:     1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
+  h3 {
+    font-size:       max(14px, 3vh);  /*  min.:12px - ca.:30px  */
+    letter-spacing:  0.1vh;
+    font-weight:     normal;
+    color:           rgba(139, 0, 0, 1);
+    text-shadow:     0.5vh 0.5vh 0.5vh rgba(68, 68, 68, 1), -0.1vh -0.1vh red;
+
     z-index:         20;
   } 
 
-  a {
+      h3 {text-align: left;}
+
+  h4, h5,
+  .audio-text {
+    text-decoration: none;
+    font-size:       max(10px, 2.777vh);  /*  min.:10px - ca.:30px  */
+    letter-spacing:  0;
+    line-height:     max(10px, 2.777vh);
+    font-weight:     normal;
+    text-shadow:     none;
+    color:           rgba(102, 0, 0, 1);
+
+    z-index:         20;
+  }
+
+      h4 {text-align: left;}
+      h5 {text-align: right;}
+
+      .audio-text:hover,
+      .audio-text:active {
+          text-decoration:  none;
+          font-size:        max(10px, 2.777vh);  /*  min.:10px - ca.:30px  */
+          letter-spacing:   0;
+          line-height:      max(10px, 2.777vh);
+          font-weight:      bold;
+          color:            rgba(255, 255, 0, 0.9);
+          text-shadow:      0.5vh 0.5vh 0.5vh rgba(68, 68, 68, 1), -0.1vh -0.1vh black;
+          transition:       all 0.5s ease-in-out;
+      
+          z-index:          20;
+      }
+
+  .vmj-icon {
     text-decoration:  none;
     font-size:        max(18px, 3.516vh);  /*  min.:18px - ca.:36px  */
     letter-spacing:   2px;
     font-weight:      bold;
-    color:            rgba(198, 13, 13, 1);
-    text-shadow:      1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
+    color:            rgba(139, 0, 0, 1);
+    text-shadow:      0.1vh 0.1vh 0.1vh rgba(68, 68, 68, 1), -0.1vh -0.1vh #ffa500;
+
     z-index:          20;
   }
 
-      a:hover {
+      .vmj-icon:hover,
+      .vmj-icon:active {
+        text-decoration: none;
         font-size:       max(20px, 3.906vh);  /*  min.:20px - ca.:40px  */
         letter-spacing:  4px;
         font-weight:     bold;
-        color:           rgba(198, 13, 13, 1);
-        text-shadow:     1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
+        color:           rgba(255, 255, 0, 0.9);
+        text-shadow:     0.5vh 0.5vh 0.5vh rgba(68, 68, 68, 1), -0.1vh -0.1vh black;
         transition:      all 0.5s ease-in-out;
+
         z-index:         20;
       }
 
@@ -47,9 +86,10 @@ h1, h2 {
     T R I A L  B a c k g r o u n d - C o l o r  a n d  - I m a g e
 \*  ========================================================================  */
 
-/*body {background-color: darkgreen; z-index: 0;}
+body {background-color: lightgreen; z-index: 0;}
+footer {background-color: green; z-index: 0;}
 
-h1, h2 {background-color: lightblue; z-index: 0;}
+/*h1, h2 {background-color: lightblue; z-index: 0;}
 
 header {background-color: blue; z-index: 0;}
     .header-text {background-color: lightcyan; z-index: 0;}
