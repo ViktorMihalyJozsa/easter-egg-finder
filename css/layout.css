@@ -391,7 +391,7 @@ main {
               }
 
           .button {
-              cursor:         pointer;
+              cursor:         url("../assets/greencursor.png") 2 2, pointer;    /*  C U R S O R  S T Y L E  */
               width:          15vh;
               height:         12vh;
               border-radius:  2.4vh;
@@ -410,7 +410,7 @@ main {
       }
 
       .canvas-element {
-        cursor:      pointer;
+        cursor:      url("../assets/greencursor.png") 2 2, pointer;    /*  C U R S O R  S T Y L E  */
         box-shadow:  1vh 1vh 1vh rgba(0, 0, 0, 0.5);
         z-index:     100;
       }
@@ -421,35 +421,29 @@ main {
 \*  ========================================================================  */
 
 footer {
-    grid-area:              footer;
+    grid-area:       footer;
 
-    display:                grid;
-    grid-template-columns:  2fr 1fr;
-    grid-template-rows:     auto;
-    grid-template-areas: 
-        "footer-text footer-image";
+    display:         flex;
+    flex-direction:  row;
 
-    width:                  auto;
-    height:                 auto;
+    width:           3fr;
+    height:          auto;
 
-    border-right:           1px solid green;
-    border-left:            1px solid green;
-    box-shadow:             1vh 1vh 1vh rgba(0, 0, 0, 0.5);
+    border-right:    1px solid green;
+    border-left:     1px solid green;
+    box-shadow:      1vh 1vh 1vh rgba(0, 0, 0, 0.5);
 }
 
     .footer-text {
-        grid-area:    footer-text;
-        grid-column:  1;
+        width:    82%;  /*56.5%*/
+        height:   16vh;
+        padding:  0.5vh 0vh 0.5vh 2vh;
 
-        width:        auto;  /*2fr;*/
-        height:       16vh;
-        padding:      0.5vh 0vh 0.5vh 2vh;
-
-        z-index:      30;
+        z-index:  30;
     }
 
         audio {
-            width:          100%;  /*2fr;*/
+            width:          100%; 
             height:         3vh;
             margin:         0.25vh 0vh 0.25vh 0vh;
     
@@ -461,13 +455,10 @@ footer {
         }
 
     .footer-image {
-        grid-area:          footer-image;
-        grid-column:        2;
-
-        width:              25.6vh;  /* 400px */
-        height:             32.0vh;  /* 500px */
+        width:              25.6vh;  /*  img.size: 400px - web.size: 43.5% or 25.6vh  */
+        height:             32.0vh;  /*  500px  */
         margin-top:         -15vh;
-        margin-right:       -5vh;
+        margin-right:       -15vh;   /*  25.6vh=43.5% 15vh=25.5%  */
 
         background-image:   url("../assets/footer-logo.png");
         background-repeat:  no-repeat;
@@ -479,53 +470,44 @@ footer {
 
 @media(max-width: 1025px) {
     footer {
-        grid-area:              footer;
+        grid-area:       footer;
     
-        display:                grid;
-        grid-template-columns:  2fr 1fr;
-        grid-template-rows:     auto;
-        grid-template-areas: 
-            "footer-text footer-image";
-
-        width:                  3fr;
-        height:                 auto;
+        display:         flex;
+        flex-direction:  row;
     
-        border-right:           1px solid green;
-        border-left:            1px solid green;
-        box-shadow:             1vh 1vh 1vh rgba(0, 0, 0, 0.5);
+        width:           3fr;
+        height:          auto;
+    
+        border-right:    1px solid green;
+        border-left:     1px solid green;
+        box-shadow:      1vh 1vh 1vh rgba(0, 0, 0, 0.5);
     }
     
         .footer-text {
-            grid-area:    footer-text;
-            grid-column:  1;
+            width:    82%;  /*56.5%*/
+            height:   16vh;
+            padding:  0.5vh 0vh 0.5vh 2vh;
     
-            width:        auto;  /*2fr;*/
-            height:       6vh;
-            padding:      0.5vh 0vh 0.5vh 2vh;
-    
-            z-index:      30;
+            z-index:  30;
         }
     
             audio {
-                width:          100%;  /*2fr;*/
+                width:          100%; 
                 height:         3vh;
                 margin:         0.25vh 0vh 0.25vh 0vh;
-    
+        
                 border:         1px solid rgba(139, 0, 0, 1);
                 border-radius:  3vh;
                 box-shadow:     1vh 1vh 1vh rgba(0, 0, 0, 0.3);
-    
+        
                 z-index:        30;
             }
     
         .footer-image {
-            grid-area:          footer-image;
-            grid-column:        2;
-    
-            width:              25.6vh;  /* 400px */
-            height:             32.0vh;  /* 500px */
+            width:              25.6vh;  /*  img.size: 400px - web.size: 43.5% or 25.6vh  */
+            height:             32.0vh;  /*  500px  */
             margin-top:         -15vh;
-            margin-right:       -5vh;
+            margin-right:       -15vh;   /*  25.6vh=43.5% 15vh=25.5%  */
     
             background-image:   url("../assets/footer-logo.png");
             background-repeat:  no-repeat;
@@ -537,25 +519,22 @@ footer {
 
 
 @media(max-width: 768px) {
-        footer {
-            grid-area:              footer;
-        
-            display:                grid;
-            grid-template-columns:  1fr;
-            grid-template-rows:     auto;
-            grid-template-areas: 
-                "footer-text footer-image";
-
-            border-right:           none;
-            border-left:            none;
-            box-shadow:             none;
-        }
+    footer {
+        grid-area:       footer;
+    
+        display:         flex;
+        flex-direction:  row;
+    
+        width:           1fr;
+        height:          auto;
+    
+        border-right:    1px solid green;
+        border-left:     1px solid green;
+        box-shadow:      1vh 1vh 1vh rgba(0, 0, 0, 0.5);
+    }
         
             .footer-text {
-                grid-area:    footer-text;
-                grid-column:  1;
-        
-                width:        auto;
+                width:        72%;
                 height:       16vh;
                 padding:      0.5vh 0vh 0.5vh 2vh;
                 text-align:   left;
@@ -576,12 +555,9 @@ footer {
                 }
         
             .footer-image {
-                grid-area:          footer-image;
-                grid-column:        2;
-        
                 margin-top:         -10.2vh;
                 margin-right:       0vh;
-                width:              16.6vh;  /*  19.52vh*0.85=16.592vh (img:305px)  */
+                width:              16.6vh;  /*  19.52vh*0.85=16.592vh - 28% - (img:305px)  */
                 height:             27.2vh;  /*  32vh*0.85=27.2vh      (img:500px)  */
         
                 background-image:   url("../assets/footer-logo-mobil.png");
