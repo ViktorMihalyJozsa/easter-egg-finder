@@ -75,32 +75,31 @@ header {
 
     width:         3fr;  /*  FHD(1920x1080) 3fr = 30% = 30vw  */
     height:        auto;
-    padding:       5vh 2vh 0vh 2vh;
 }
 
     .header-text {
-        width:       auto;
-        height:      20vh;
+        width:    3fr;
+        height:   20vh;
+        padding:  5vh 2vh 0vh 0vh;
     }
 
     .header-image {
-        width:    auto;
-        height:   72vh;
+        width:    3fr;
+        height:   75vh;
     }
 
         .header-top-image-text {
-            float:    left;
+            float:   left;
 
-            width:    42vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw 
-                                     ~ MINUS: .header-padding(2vh); PLUS: .myCanvas"padding"(ca.:8vh); !!!  */
-            height:   37vh;  /*  FHD-400px=(37.685vh)37vh                                                   */
+            width:   calc(100% - 17.777vh);  /*  45vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw  */
+            height:  calc(100% - 45vh);      /*  FHD-400px=(37.685vh)37vh  */
         }
 
         .header-top-image {
             float:              right;
 
-            margin-top:         0vh;
-            margin-right:       -2vh;     /*  -2vh-8vh(canvas"padding")= -10vh                 */
+            margin-top:         -7vh;
+            margin-right:       0vh;
             width:              17.777vh;  /*  FHD-192px=17.777vh (img:240px) 1fr = 10% = 10vw  */
             height:             37.037vh;  /*  FHD-400px=37.037vh (img:500px)                   */
 
@@ -130,8 +129,10 @@ header {
         .header-bottom-image-text {
             float:    right;
 
-            width:    0;
-            height:   0;
+            width:    100%;
+            height:   45vh;
+
+            z-index:  20;
         }
 
 
@@ -143,33 +144,31 @@ header {
     
         width:         3fr;  /*  FHD(1920x1080) 3fr = 30% = 30vw  */
         height:        auto;
-        padding:       5vh 2vh 0vh 2vh;
     }
     
         .header-text {
-            width:       auto;
-            height:      20vh;
-            text-align:  left;
+            width:    3fr;
+            height:   20vh;
+            padding:  5vh 2vh 0vh 0vh;
         }
     
         .header-image {
-            width:    auto;
-            height:   72vh;
+            width:    3fr;
+            height:   75vh;
         }
     
             .header-top-image-text {
-                float:    left;
+                float:   left;
     
-                width:    35vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw 
-                                         ~ MINUS: .header-padding(2vh); PLUS: .myCanvas"padding"(ca.:8vh); !!!  */
-                height:   37vh;  /*  FHD-400px=(37.685vh)37vh                                                   */
+                width:   calc(100% - 17.777vh);  /*  45vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw  */
+                height:  calc(100% - 45vh);      /*  FHD-400px=(37.685vh)37vh  */
             }
     
             .header-top-image {
                 float:              right;
     
-                margin-top:         0vh;
-                margin-right:       -2vh;     /*  -2vh-8vh(canvas"padding")= -10vh                 */
+                margin-top:         -7vh;
+                margin-right:       0vh;
                 width:              17.777vh;  /*  FHD-192px=17.777vh (img:240px) 1fr = 10% = 10vw  */
                 height:             37.037vh;  /*  FHD-400px=37.037vh (img:500px)                   */
     
@@ -184,7 +183,7 @@ header {
                 position:           absolute;
                 float:              left;
                 left:               2fr;
-                bottom:             -15vh;
+                bottom:             0vh;
     
                 width:              32.4vh;  /*  FHD-486px=45vh   (img:360px)  */
                 height:             45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
@@ -192,15 +191,17 @@ header {
                 background-image:   url("../assets/header-bottom-logo.png");
                 background-size:    cover;
                 background-repeat:  no-repeat;
-
+    
                 z-index:            10;
             }
     
             .header-bottom-image-text {
                 float:    right;
     
-                width:    0;
-                height:   0;
+                width:    100%;
+                height:   45vh;
+
+                z-index:  20;
             }
 }    
 
@@ -214,27 +215,26 @@ header {
         flex-direction:  column;
 
         width:           1fr;
-        height:          90vh;
-        padding:         5vh 2vh 0vh 2vh;
+        height:          auto;
     }
 
         .header-text {
-            width:       auto;
-            height:      18vh;
-
-            text-align:  left;
+            width:    1fr;
+            height:   18vh;
+            padding:  5vh 2vh 2vh 2vh;
         }
 
         .header-image {
-            width:   auto;
-            height:  72vh;
+            width:   1fr;
+            height:  75vh;
         }
 
             .header-top-image-text {
                 float:    left;
 
-                width:    64vw;  /*  Mobil(1600x720)-456px/13.2=34vh ~ MINUS: Header-padding(2vh)=32vh !!!  2/3fr=66.666%  */
-                height:   auto;
+                width:    calc(100% - 17.11vh);  /*  Mobil(1600x720)-456px/13.2=34vh ~ MINUS: Header-padding(2vh)=32vh !!!  2/3fr=66.666%  */
+                height:   calc(100% - 34.425vh);
+                padding:  0vh 0vh 0vh 2vh;
 
                 z-index:  20;
             }
@@ -242,8 +242,8 @@ header {
             .header-top-image {
                 float:              right;
 
-                margin-top:         5vh;  /*0vh;*/
-                margin-right:       -2vh;     /*  MINUS: margin-right(NOT Minus .myCanvas"padding") = -2vh    */
+                margin-top:         0vh;      /*0vh;*/
+                margin-right:       0vh;      /*  MINUS: margin-right(NOT Minus .myCanvas"padding") = -2vh    */
                 width:              15.11vh;  /*  FHD-192px=17.777vh*0.85=15.11vh (img:240px)  1/3fr=33.333%  */
                 height:             31.48vh;  /*  FHD-400px=37.037vh*0.85=31.48vh (img:500px)                 */
 
@@ -257,7 +257,7 @@ header {
             .header-bottom-image {
                 position:           absolute;
                 float:              left;
-                left:               0vh;
+                left:               2vh;
                 bottom:             0vh;
 
                 width:              24.786vh;  /*  FHD-486px=45vh*0.85=38.25vh (img:360px)  */
@@ -273,8 +273,8 @@ header {
             .header-bottom-image-text {
                 float:    right;
 
-                width:    0;
-                height:   0;
+                width:    calc(100% - 26.786vh);
+                height:   34.425vh;
 
                 z-index:  20;
             }
