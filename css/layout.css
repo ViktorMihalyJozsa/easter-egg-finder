@@ -435,9 +435,9 @@ footer {
 }
 
     .footer-text {
-        width:    82%;  /*56.5%*/
+        width:    72%;  /*42.5%*/
         height:   16vh;
-        padding:  0.5vh 0vh 0.5vh 2vh;
+        padding:  0.5vh 2vh 0.5vh 2vh;
 
         z-index:  30;
     }
@@ -445,7 +445,7 @@ footer {
         audio {
             width:          100%; 
             height:         3vh;
-            margin:         0.25vh 0vh 0.25vh 0vh;
+            margin:         0.5vh 0vh 0.5vh 0vh;
     
             border:         1px solid rgba(139, 0, 0, 1);
             border-radius:  3vh;
@@ -455,10 +455,10 @@ footer {
         }
 
     .footer-image {
-        width:              25.6vh;  /*  img.size: 400px - web.size: 43.5% or 25.6vh  */
-        height:             32.0vh;  /*  500px  */
+        width:              32vh;   /*  img.size: 400px - web.size: 54.5% or 32vh  */
+        height:             32vh;   /*  500px  */
         margin-top:         -15vh;
-        margin-right:       -15vh;   /*  25.6vh=43.5% 15vh=25.5%  */
+        margin-right:       -18vh;  /*  32vh=57.5% 18vh=29.5%  */
 
         background-image:   url("../assets/footer-logo.png");
         background-repeat:  no-repeat;
@@ -484,9 +484,9 @@ footer {
     }
     
         .footer-text {
-            width:    82%;  /*56.5%*/
+            width:    72%;  /*42.5%*/
             height:   16vh;
-            padding:  0.5vh 0vh 0.5vh 2vh;
+            padding:  0.5vh 2vh 0.5vh 2vh;
     
             z-index:  30;
         }
@@ -494,7 +494,7 @@ footer {
             audio {
                 width:          100%; 
                 height:         3vh;
-                margin:         0.25vh 0vh 0.25vh 0vh;
+                margin:         0.5vh 0vh 0.5vh 0vh;
         
                 border:         1px solid rgba(139, 0, 0, 1);
                 border-radius:  3vh;
@@ -504,10 +504,10 @@ footer {
             }
     
         .footer-image {
-            width:              25.6vh;  /*  img.size: 400px - web.size: 43.5% or 25.6vh  */
-            height:             32.0vh;  /*  500px  */
+            width:              32vh;   /*  img.size: 400px - web.size: 54.5% or 32vh  */
+            height:             32vh;   /*  500px  */
             margin-top:         -15vh;
-            margin-right:       -15vh;   /*  25.6vh=43.5% 15vh=25.5%  */
+            margin-right:       -18vh;  /*  32vh=57.5% 18vh=29.5%  */
     
             background-image:   url("../assets/footer-logo.png");
             background-repeat:  no-repeat;
@@ -534,7 +534,7 @@ footer {
     }
         
             .footer-text {
-                width:        72%;
+                width:        65.5%;
                 height:       16vh;
                 padding:      0.5vh 0vh 0.5vh 2vh;
                 text-align:   left;
@@ -557,8 +557,8 @@ footer {
             .footer-image {
                 margin-top:         -10.2vh;
                 margin-right:       0vh;
-                width:              16.6vh;  /*  19.52vh*0.85=16.592vh - 28% - (img:305px)  */
-                height:             27.2vh;  /*  32vh*0.85=27.2vh      (img:500px)  */
+                width:              20.672vh;  /*  380px/500px=0.76*27.2=20.672  -  (img:380px)  */
+                height:             27.2vh;    /*  32vh*0.85=27.2vh              -  (img:500px)  */
         
                 background-image:   url("../assets/footer-logo-mobil.png");
                 background-repeat:  no-repeat;
