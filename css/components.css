@@ -31,9 +31,9 @@ h1, h2 {
   .audio-text {
     text-decoration: none;
     font-size:       max(10px, 2.5vh);  /*  min.:10px - ca.:30px  */
-    letter-spacing:  0.1vh;
+    letter-spacing:  0;
     line-height:     max(10px, 2.5vh);
-    font-weight:     bold;
+    font-weight:     normal;
     text-shadow:     none;
     color:           rgba(102, 0, 0, 1);
 
