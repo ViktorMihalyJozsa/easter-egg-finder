@@ -101,7 +101,7 @@ header {
             width:              17.777vh;  /*  FHD-192px=17.777vh (img:240px) 1fr = 10% = 10vw  */
             height:             37.037vh;  /*  FHD-400px=37.037vh (img:500px)                   */
 
-            margin-top:         -7vh;
+            margin-top:         -5vh;
             margin-right:       0vh;
 
             background-image:   url("../assets/header-top-logo.png");
@@ -131,7 +131,7 @@ header {
             float:    right;
 
             width:    100%;
-            height:   45vh;
+            height:   43vh;
 
             z-index:  20;
         }
@@ -171,7 +171,7 @@ header {
                 width:              17.777vh;  /*  FHD-192px=17.777vh (img:240px) 1fr = 10% = 10vw  */
                 height:             37.037vh;  /*  FHD-400px=37.037vh (img:500px)                   */
 
-                margin-top:         -7vh;
+                margin-top:         -5vh;
                 margin-right:       0vh;
     
                 background-image:   url("../assets/header-top-logo.png");
@@ -201,7 +201,7 @@ header {
                 float:    right;
     
                 width:    100%;
-                height:   45vh;
+                height:   43vh;
 
                 z-index:  20;
             }
