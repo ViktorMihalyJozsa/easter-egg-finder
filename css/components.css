@@ -89,7 +89,7 @@ h1, h2 {
 body {background-color: green; z-index: 0;}
 footer {background-color: green; z-index: 0;}
 
-h1, h2 {background-color: lightblue; z-index: 0;}
+/*h1, h2 {background-color: lightblue; z-index: 0;}
 
 header {background-color: blue; z-index: 0;}
     .header-text {background-color: lightcyan; z-index: 0;}
@@ -104,4 +104,4 @@ main {background-color: yellow; z-index: 0;}
 
 footer {background-color: darkgreen; z-index: 0;}
     .footer-text {background-color: aqua; z-index: 0;}
-    .footer-image {background-color: lightcoral; z-index: 0;}
+    .footer-image {background-color: lightcoral; z-index: 0;}*/
