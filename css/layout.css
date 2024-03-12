@@ -434,9 +434,9 @@ footer {
     .footer-text {
         float:    left;
 
-        width:    74.5%;  /*  77.5% - 74.5%  -  2vh = 3% !!! */
+        width:    calc(100% - 2vh - 40%);  /*  77.5% - 74.5%  -  2vh = 3% !!! */
         height:   auto;
-        padding:  0.5vh 2vh 0.5vh 2vh;
+        padding:  0.5vh 40% 0.5vh 2vh;
 
         z-index:  30;
     }
@@ -456,11 +456,11 @@ footer {
     .footer-image {
         float:              right;
 
-        width:              32vh;   /*  img.size: 400px - web.size: 54.5% or 32vh  */
-        height:             32vh;   /*  500px  */
+        width:              32vh;   /*  img.size: 500px = 32vh  */
+        height:             32vh;   /*  img.size: 500px = 32vh  */
 
-        margin-bottom:      0; /*  -15vh  */
-        margin-right:       -20vh;  /*  32vh=54.5% 20vh=34%  */
+        margin-top:         -32vh;  /*  image-height  */
+        margin-right:       -20vh;  /*  desing-size  */
 
         background-image:   url("../assets/footer-logo.png");
         background-repeat:  no-repeat;
@@ -485,9 +485,9 @@ footer {
         .footer-text {
             float:    left;
     
-            width:    74.5%;  /*  77.5% - 74.5%  -  2vh = 3% !!! */
+            width:    calc(100% - 2vh - 40%);  /*  77.5% - 74.5%  -  2vh = 3% !!! */
             height:   auto;
-            padding:  0.5vh 2vh 0.5vh 2vh;
+            padding:  0.5vh 40% 0.5vh 2vh;
     
             z-index:  30;
         }
@@ -507,11 +507,11 @@ footer {
         .footer-image {
             float:              right;
     
-            width:              32vh;   /*  img.size: 400px - web.size: 54.5% or 32vh  */
-            height:             32vh;   /*  500px  */
-
-            margin-bottom:      0; /*  -15vh  */
-            margin-right:       -20vh;  /*  32vh=54.5% 20vh=34%  */
+            width:              32vh;   /*  img.size: 500px = 32vh  */
+            height:             32vh;   /*  img.size: 500px = 32vh  */
+    
+            margin-top:         -32vh;  /*  image-height  */
+            margin-right:       -20vh;  /*  desing-size  */
     
             background-image:   url("../assets/footer-logo.png");
             background-repeat:  no-repeat;
@@ -537,9 +537,9 @@ footer {
             .footer-text {
                 float:    left;
 
-                width:    60%;  /*  min.: 60%  */
+                width:    calc(100% - 2vh - 40%);  /*  min.: 60%  */
                 height:   16vh;
-                padding:  0.5vh 0vh 0.5vh 2vh;
+                padding:  0.5vh 40% 0.5vh 2vh;
         
                 z-index:  30;
             }
@@ -559,8 +559,8 @@ footer {
             .footer-image {
                 float:              right;
 
-                margin-bottom:      0;  /*    */
-                margin-right:       0vh;  /*  0vh  */
+                margin-top:         -25.6vh;  /*  image-height  */
+                margin-right:       0vh;      /*  0vh  */
 
                 width:              19.456vh;  /*  380px/500px=0.76*25.6=19.456  -  (img:380px)  */
                 height:             25.6vh;    /*  32vh*0.8=25.6vh               -  (img:500px)  */
