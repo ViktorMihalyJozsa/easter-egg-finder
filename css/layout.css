@@ -434,9 +434,9 @@ footer {
     .footer-text {
         float:    left;
 
-        width:    calc(100% - 2vh - 40%);  /*  77.5% - 74.5%  -  2vh = 3% !!! */
-        height:   auto;
-        padding:  0.5vh 40% 0.5vh 2vh;
+        width:    calc(100% - 2vh - 30%);  /*  min.: 66%  */
+        height:   16vh;
+        padding:  0.5vh 30% 0.5vh 2vh;
 
         z-index:  30;
     }
@@ -484,11 +484,11 @@ footer {
     
         .footer-text {
             float:    left;
-    
-            width:    calc(100% - 2vh - 40%);  /*  77.5% - 74.5%  -  2vh = 3% !!! */
-            height:   auto;
-            padding:  0.5vh 40% 0.5vh 2vh;
-    
+
+            width:    calc(100% - 2vh - 30%);  /*  min.: 66%  */
+            height:   16vh;
+            padding:  0.5vh 30% 0.5vh 2vh;
+
             z-index:  30;
         }
     
@@ -537,9 +537,9 @@ footer {
             .footer-text {
                 float:    left;
 
-                width:    calc(100% - 2vh - 40%);  /*  min.: 60%  */
+                width:    calc(100% - 2vh - 30%);  /*  min.: 66%  */
                 height:   16vh;
-                padding:  0.5vh 40% 0.5vh 2vh;
+                padding:  0.5vh 30% 0.5vh 2vh;
         
                 z-index:  30;
             }
