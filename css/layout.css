@@ -534,7 +534,7 @@ footer {
         
             .footer-text {
                 float:    left;
-                width:    62.5%;  /*  min.: 65.5%  */
+                width:    66%;  /*  min.: 62.5%  */
                 height:   16vh;
                 padding:  0.5vh 2vh 0.5vh 2vh;
         
@@ -556,7 +556,7 @@ footer {
             .footer-image {
                 float:              right;
 
-                margin-top:         -11.2vh;
+                margin-top:         -27.2vh;
                 margin-right:       0vh;
                 width:              20.672vh;  /*  380px/500px=0.76*27.2=20.672  -  (img:380px)  */
                 height:             27.2vh;    /*  32vh*0.85=27.2vh              -  (img:500px)  */
