@@ -535,7 +535,7 @@ footer {
             .footer-text {
                 float:    left;
 
-                width:    64.5%;  /*  min.: 62.5%  */
+                width:    60%;  /*  min.: 60%  */
                 height:   16vh;
                 padding:  0.5vh 2vh 0.5vh 2vh;
         
