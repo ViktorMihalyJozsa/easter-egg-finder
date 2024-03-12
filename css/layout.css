@@ -556,10 +556,8 @@ footer {
         
             .footer-image {
                 float:              right;
-                position:           fixed;
-                right:              0;
-                bottom:             0;
 
+                margin-bottom:      0;
                 margin-right:       0vh;
                 width:              19.456vh;  /*  380px/500px=0.76*25.6=19.456  -  (img:380px)  */
                 height:             25.6vh;    /*  32vh*0.8=25.6vh               -  (img:500px)  */
