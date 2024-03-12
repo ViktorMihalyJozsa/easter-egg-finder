@@ -435,7 +435,7 @@ footer {
         float:    left;
 
         width:    74.5%;  /*  77.5% - 74.5%  -  2vh = 3% !!! */
-        height:   16vh;
+        height:   auto;
         padding:  0.5vh 2vh 0.5vh 2vh;
 
         z-index:  30;
@@ -458,7 +458,7 @@ footer {
 
         width:              32vh;   /*  img.size: 400px - web.size: 54.5% or 32vh  */
         height:             32vh;   /*  500px  */
-        margin-top:         -15vh;
+        margin-top:         -15vh;  /*  -15vh  */
         margin-right:       -20vh;  /*  32vh=54.5% 20vh=34%  */
 
         background-image:   url("../assets/footer-logo.png");
@@ -484,8 +484,8 @@ footer {
         .footer-text {
             float:    left;
     
-            width:    71.5%;  /*  77.5% - 74.5%  -  2vh = 3% !!! */
-            height:   16vh;
+            width:    74.5%;  /*  77.5% - 74.5%  -  2vh = 3% !!! */
+            height:   auto;
             padding:  0.5vh 2vh 0.5vh 2vh;
     
             z-index:  30;
@@ -508,7 +508,7 @@ footer {
     
             width:              32vh;   /*  img.size: 400px - web.size: 54.5% or 32vh  */
             height:             32vh;   /*  500px  */
-            margin-top:         -15vh;
+            margin-top:         -15vh;  /*  -15vh  */
             margin-right:       -20vh;  /*  32vh=54.5% 20vh=34%  */
     
             background-image:   url("../assets/footer-logo.png");
@@ -534,7 +534,8 @@ footer {
         
             .footer-text {
                 float:    left;
-                width:    66%;  /*  min.: 62.5%  */
+
+                width:    64.5%;  /*  min.: 62.5%  */
                 height:   16vh;
                 padding:  0.5vh 2vh 0.5vh 2vh;
         
@@ -556,10 +557,10 @@ footer {
             .footer-image {
                 float:              right;
 
-                margin-top:         -27.2vh;
+                margin-top:         -8.6vh;
                 margin-right:       0vh;
-                width:              20.672vh;  /*  380px/500px=0.76*27.2=20.672  -  (img:380px)  */
-                height:             27.2vh;    /*  32vh*0.85=27.2vh              -  (img:500px)  */
+                width:              19.456vh;  /*  380px/500px=0.76*25.6=19.456  -  (img:380px)  */
+                height:             25.6vh;    /*  32vh*0.8=25.6vh               -  (img:500px)  */
         
                 background-image:   url("../assets/footer-logo-mobil.png");
                 background-repeat:  no-repeat;
