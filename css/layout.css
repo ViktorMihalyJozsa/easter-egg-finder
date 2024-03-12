@@ -434,9 +434,9 @@ footer {
     .footer-text {
         float:    left;
 
-        width:    calc(100% - 2vh - 30%);  /*  min.: 66%  */
+        width:    calc(100% - 2vh - 35%);  /*  min.: 62%  -  2vh = 3%  */
         height:   16vh;
-        padding:  0.5vh 30% 0.5vh 2vh;
+        padding:  0.5vh 35% 0.5vh 2vh;
 
         z-index:  30;
     }
@@ -485,9 +485,9 @@ footer {
         .footer-text {
             float:    left;
 
-            width:    calc(100% - 2vh - 30%);  /*  min.: 66%  */
+            width:    calc(100% - 2vh - 35%);  /*  min.: 62%  -  2vh = 3%  */
             height:   16vh;
-            padding:  0.5vh 30% 0.5vh 2vh;
+            padding:  0.5vh 35% 0.5vh 2vh;
 
             z-index:  30;
         }
@@ -537,9 +537,9 @@ footer {
             .footer-text {
                 float:    left;
 
-                width:    calc(100% - 2vh - 30%);  /*  min.: 66%  */
+                width:    calc(100% - 2vh - 35%);  /*  min.: 62%  -  2vh = 3%  */
                 height:   16vh;
-                padding:  0.5vh 30% 0.5vh 2vh;
+                padding:  0.5vh 35% 0.5vh 2vh;
         
                 z-index:  30;
             }
