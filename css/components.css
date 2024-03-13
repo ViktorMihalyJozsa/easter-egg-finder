@@ -96,8 +96,8 @@ header {background-color: blue; z-index: 0;}
     .header-image {background-color: red; z-index: 0;}
         .header-top-image-text {background-color: lightgreen; z-index: 0;}
         .header-top-image {background-color: pink; z-index: 0;}
-        .header-bottom-image {background-color: darkred; z-index: 0;}
-        .header-bottom-image-text {background-color: lightgoldenrodyellow; z-index: 0;}
+        .header-bottom-left-image {background-color: darkred; z-index: 0;}
+        .header-bottom-right-image {background-color: lightgoldenrodyellow; z-index: 0;}
 
 main {background-color: yellow; z-index: 0;}
     .control-panel {background-color: blueviolet; z-index: 0;}
