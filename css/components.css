@@ -16,7 +16,7 @@ h1, h2 {
       h2 {text-align: right;} 
 
   h3 {
-    font-size:       max(14px, 3vh);  /*  min.:12px - ca.:30px  */
+    font-size:       3vh;  /*  min.:12px - ca.:30px  */
     letter-spacing:  0.1vh;
     font-weight:     normal;
     color:           rgba(139, 0, 0, 1);
@@ -30,9 +30,9 @@ h1, h2 {
   h4, h5,
   .audio-text {
     text-decoration: none;
-    font-size:       max(10px, 2.5vh);  /*  min.:10px - ca.:25px  */
+    font-size:       2.5vh;  /*  min.:10px - ca.:25px  */
     letter-spacing:  0;
-    line-height:     max(10px, 2.75vh);
+    line-height:     2.75vh;
     font-weight:     normal;
     text-shadow:     none;
     color:           rgba(102, 0, 0, 1);
@@ -46,9 +46,9 @@ h1, h2 {
       .audio-text:hover,
       .audio-text:active {
           text-decoration:  none;
-          font-size:        max(10px, 2.75vh);  /*  min.:10px - ca.:25px  */
+          font-size:        2.75vh;  /*  min.:10px - ca.:25px  */
           letter-spacing:   0;
-          line-height:      max(10px, 2.75vh);
+          line-height:      2.75vh;
           font-weight:      bold;
           color:            rgba(255, 255, 0, 0.9);
           text-shadow:      0.5vh 0.5vh 0.5vh rgba(68, 68, 68, 1), -0.1vh -0.1vh black;
@@ -59,7 +59,7 @@ h1, h2 {
 
   .vmj-icon {
     text-decoration:  none;
-    font-size:        max(18px, 3.516vh);  /*  min.:18px - ca.:36px  */
+    font-size:        3.5vh;  /*  min.:18px - ca.:36px  */
     letter-spacing:   3px;
     font-weight:      bold;
     color:            rgba(139, 0, 0, 1);
@@ -71,7 +71,7 @@ h1, h2 {
       .vmj-icon:hover,
       .vmj-icon:active {
         text-decoration: none;
-        font-size:       max(20px, 3.906vh);  /*  min.:20px - ca.:40px  */
+        font-size:       4.0vh;  /*  min.:20px - ca.:40px  */
         letter-spacing:  4px;
         font-weight:     bold;
         color:           rgba(255, 255, 0, 0.9);
