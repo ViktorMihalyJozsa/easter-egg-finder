@@ -27,14 +27,14 @@
 @media(max-width: 768px) {
     .container {
         display:                grid;
-        grid-template-columns:  50vh;  /*1fr;*/
+        grid-template-columns:  1fr;  /*1fr;*/
         grid-template-rows:     auto;
         grid-template-areas:
             "header"
             "main"
             "footer";
         justify-content:        center;
-        max-width:              768px;
+        max-width:              50vh;
     }
 }
 
@@ -52,31 +52,80 @@ header {
     height:       auto;
 }
 
-    .header-text {
-        width:    3fr;
-        height:   25vh;
-        padding:  5vh 2vh 0vh 0vh;
+    .header-menu-box {
+        width:   100%;
+        height:  auto;
     }
 
-    .header-image {
-        width:   3fr;
-        height:  75vh;
-    }
+        .header-navigation {
+            display:  flex;
 
-        .header-top-image-text {
-            float:   left;
-
-            width:   calc(100% - 17.777vh);  /*  45vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw  */
-            height:  calc(100% - 45vh);      /*  FHD-400px=(37.685vh)37vh  */
+            width:    auto;
+            height:   6vh;
         }
 
-        .header-top-image {
+            .home-button,
+            .contact-button,
+            .finders-button,
+            .game-button {
+                display:            flex;
+                justify-content:    center;
+                align-items:        center;
+
+                height:             4.5vh;
+                margin-top:         1.5vh;
+                margin-right:       1.5vh;
+                padding:            0.5vh 0.5vh 0.5vh 0.5vh;
+
+                background-image:   url("../assets/menu-background.png");
+                background-repeat:  no-repeat;
+                background-size:    cover;
+
+                border:             1px solid;
+                border-color:       rgba(0, 0, 0, 0.25);
+                border-radius:      1vh 1vh 1vh 1vh;
+                box-shadow:         1vh 1vh 1vh rgba(68, 68, 68, 0.75);
+            }
+
+            .home-button { width:  40%; }
+            .contact-button { width:  60%; }
+            .game-button { width:  60%; }
+            .finders-button { width:  40%; }
+
+        .header-text {
+            display:          flex;
+            justify-content:  center;
+            align-items:      center;
+ 
+            width:            100%;
+            height:           20vh;
+        }
+
+        .header-nameday {
+            width:         100%;
+            height:        8vh;
+            padding-left:  0vh;
+        }
+
+    .header-images-box {
+        width:   100%;
+        height:  60vh;
+    }
+
+        .header-top-left-image {
+            float:   left;
+
+            width:   calc(100% - 17vh);  /*  45vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw  */
+            height:  calc(100% - 45vh);  /*  FHD-400px=(37.685vh)37vh  */
+        }
+
+        .header-top-right-image {
             float:         right;
 
-            width:         17.777vh;  /*  FHD-192px=17.777vh (img:240px) 1fr = 10% = 10vw  */
-            height:        37.037vh;  /*  FHD-400px=37.037vh (img:500px)                   */
+            width:         17vh;  /*  FHD-192px=17.777vh (img:240px) 1fr = 10% = 10vw  */
+            height:        37vh;  /*  FHD-400px=37.037vh (img:500px)                   */
 
-            margin-top:    -7vh;
+            margin-top:    0vh;
             margin-right:  0vh;
             
             z-index:       20;
@@ -113,31 +162,80 @@ header {
         height:       auto;
     }
     
-        .header-text {
-            width:    3fr;
-            height:   25vh;
-            padding:  5vh 2vh 0vh 0vh;
+        .header-menu-box {
+            width:   100%;
+            height:  auto;
         }
-    
-        .header-image {
-            width:   3fr;
-            height:  75vh;
-        }
-    
-            .header-top-image-text {
-                float:   left;
-    
-                width:   calc(100% - 17.777vh);  /*  45vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw  */
-                height:  calc(100% - 45vh);      /*  FHD-400px=(37.685vh)37vh  */
+
+            .header-navigation {
+                display:  flex;
+
+                width:    auto;
+                height:   6vh;
+            }
+
+                .home-button,
+                .contact-button,
+                .finders-button,
+                .game-button {
+                    display:            flex;
+                    justify-content:    center;
+                    align-items:        center;
+
+                    height:             4.5vh;
+                    margin-top:         1.5vh;
+                    margin-right:       1.5vh;
+                    padding:            0.5vh 0.5vh 0.5vh 0.5vh;
+
+                    background-image:   url("../assets/menu-background.png");
+                    background-repeat:  no-repeat;
+                    background-size:    cover;
+
+                    border:             1px solid;
+                    border-color:       rgba(0, 0, 0, 0.25);
+                    border-radius:      1vh 1vh 1vh 1vh;
+                    box-shadow:         1vh 1vh 1vh rgba(68, 68, 68, 0.75);
+                }
+
+                .home-button { width:  40%; }
+                .contact-button { width:  60%; }
+                .game-button { width:  60%; }
+                .finders-button { width:  40%; }
+
+            .header-text {
+                display:          flex;
+                justify-content:  center;
+                align-items:      center;
+ 
+                width:            100%;
+                height:           20vh;
+            }
+
+            .header-nameday {
+                width:         100%;
+                height:        8vh;
+                padding-left:  0vh;
             }
     
-            .header-top-image {
+        .header-images-box {
+            width:   100%;
+            height:  60vh;
+        }
+    
+            .header-top-left-image {
+                float:   left;
+    
+                width:   calc(100% - 17vh);  /*  45vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw  */
+                height:  calc(100% - 45vh);  /*  FHD-400px=(37.685vh)37vh  */
+            }
+    
+            .header-top-right-image {
                 float:         right;
     
-                width:         17.777vh;  /*  FHD-192px=17.777vh (img:240px) 1fr = 10% = 10vw  */
-                height:        37.037vh;  /*  FHD-400px=37.037vh (img:500px)                   */
+                width:         17vh;  /*  FHD-192px=17.777vh (img:240px) 1fr = 10% = 10vw  */
+                height:        37vh;  /*  FHD-400px=37.037vh (img:500px)                   */
     
-                margin-top:    -7vh;
+                margin-top:    0vh;
                 margin-right:  0vh;
                 
                 z-index:       20;
@@ -160,7 +258,7 @@ header {
                 width:       54vh;
                 height:      45vh;
     
-                margin-top:  -33vh;  /*  height(45vh) - margin-bottom(12vh)  */
+                margin-top:  -33vh;
     
                 z-index:     20;
             }
@@ -179,33 +277,81 @@ header {
         width:           auto;  /*1fr;*/
         height:          auto;
 
-        border-right:         1px solid red;
-        border-left:          1px solid red;
-        box-shadow:           1vh 1vh 1vh rgba(0, 0, 0, 0.5);
+        border-right:    1px solid green;
+        border-left:     1px solid green;
+        box-shadow:      1vh 1vh 1vh rgba(0, 0, 0, 0.5);
     }
 
-        .header-text {
-            width:    auto;  /*1fr;*/
-            height:   25vh;
-            padding:  5vh 2vh 2vh 2vh;
+        .header-menu-box {
+            width:   100%;
+            height:  auto;
         }
 
-        .header-image {
-            width:   auto;  /*1fr;*/
-            height:  75vh;
+            .header-navigation {
+                display:  flex;
+
+                width:    auto;
+                height:   6vh;
+            }
+
+                .home-button,
+                .contact-button,
+                .finders-button,
+                .game-button {
+                    display:            flex;
+                    justify-content:    center;
+                    align-items:        center;
+
+                    height:             4.5vh;
+                    margin:             1.5vh 1vh 0vh 0.5vh;
+                    padding:            0.5vh 0.5vh 0.5vh 0.5vh;
+
+                    background-image:   url("../assets/menu-background.png");
+                    background-repeat:  no-repeat;
+                    background-size:    cover;
+
+                    border:             1px solid;
+                    border-color:       rgba(0, 0, 0, 0.25);
+                    border-radius:      1vh 1vh 1vh 1vh;
+                    box-shadow:         1vh 1vh 1vh rgba(68, 68, 68, 0.75);
+                }
+
+                .home-button { width:  28%; }
+                .contact-button { width:  72%; }
+                .game-button { width:  64%; }
+                .finders-button { width:  36%; }
+
+            .header-text {
+                display:      flex;
+                align-items:  center;
+                text-align:   center;
+ 
+                width:        100%;
+                height:       20vh;
+            }
+
+            .header-nameday {
+                width:         100%;
+                height:        8vh;
+                padding-left:  2vh;
+            }
+
+        .header-images-box {
+            width:   100%;
+            height:  60vh;
         }
 
-            .header-top-image-text {
+            .header-top-left-image {
                 float:    left;
 
-                width:    calc(100% - 17.11vh);  /*  Mobil(1600x720)-456px/13.2=34vh ~ MINUS: Header-padding(2vh)=32vh !!!  2/3fr=66.666%  */
+                width:    calc(100% - 15.11vh);  /*  Mobil(1600x720)-456px/13.2=34vh ~ MINUS: Header-padding(2vh)=32vh !!!  2/3fr=66.666%  */
                 height:   calc(100% - 34.425vh);
-                padding:  0vh 0vh 0vh 2vh;
+                padding:  2vh 0vh 0vh 2vh;
 
                 z-index:  20;
             }
 
-            .header-top-image {
+            .header-top-right-image {
                 float:         right;
 
                 width:         15.11vh;  /*  FHD-192px=17.777vh*0.85=15.11vh (img:240px)  1/3fr=33.333%  */
@@ -254,7 +400,7 @@ main {
     align-items:          center;
 
     width:                3fr;
-    height:               83vh;
+    height:               82vh;
 
     background-image:     url("../assets/game-background.png");
     background-size:      cover;
@@ -284,7 +430,7 @@ main {
         align-items:          center;
     
         width:                3fr;
-        height:               83vh;
+        height:               82vh;
     
         background-image:     url("../assets/game-background.png");
         background-size:      cover;
@@ -315,7 +461,7 @@ main {
         align-items:          center;
     
         width:                auto;
-        height:               83vh;
+        height:               82vh;
 
         background-image:     url("../assets/game-background.png");
         background-size:      cover;
@@ -427,7 +573,7 @@ footer {
         float:    left;
 
         width:    100%;  /*  calc(100% - 2vh - 30%);  /*  min.: 62%  -  2vh = 3%  */
-        height:   17vh;
+        height:   18vh;
         padding:  0.5vh 30% 0.5vh 2vh;
 
         z-index:  30;
@@ -478,7 +624,7 @@ footer {
             float:    left;
     
             width:    100%;  /*  calc(100% - 2vh - 30%);  /*  min.: 62%  -  2vh = 3%  */
-            height:   17vh;
+            height:   18vh;
             padding:  0.5vh 30% 0.5vh 2vh;
     
             z-index:  30;
@@ -530,7 +676,7 @@ footer {
                 float:    left;
 
                 width:    100%;  /*  calc(100% - 2vh - 35%);  /*  min.: 62%  -  2vh = 3%  */
-                height:   17vh;
+                height:   18vh;
                 padding:  0.5vh 35% 0.5vh 2vh;
         
                 z-index:  30;
