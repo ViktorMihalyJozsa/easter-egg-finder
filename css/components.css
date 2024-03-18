@@ -105,7 +105,7 @@ body {background-color: green; z-index: 0;}
         .header-top-left-image {background-color: lightgreen; z-index: 0;}
         .header-top-right-image {background-color: pink; z-index: 0;}
         .header-bottom-left-image {background-color: darkred; z-index: 0;}
-        .header-bottom-right-image {background-color: lightgoldenrodyellow; z-index: 0;}
+        /*.header-bottom-right-image {background-color: lightgoldenrodyellow; z-index: 0;}*/
 
 main {background-color: yellow; z-index: 0;}
     .control-panel {background-color: blueviolet; z-index: 0;}
