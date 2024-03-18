@@ -250,8 +250,6 @@ header {
     
                 width:          45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
                 height:         45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
-
-                /*margin-bottom:  -12vh;*/
     
                 z-index:        10;
             }
@@ -348,7 +346,7 @@ header {
             .header-top-left-image {
                 float:    left;
 
-                width:    calc(100% - 15.11vh);   /*  header-image-box:width - header-top-right-image:width  */
+                width:    calc(100% - 15.11vh);  /*  header-image-box:width - header-top-right-image:width  */
                 height:   calc(100% - 34.425vh);  /*  header-image-box:height - header-bottom-left-image:height  */
                 padding:  4vh 0vh 0vh 2vh;
 
