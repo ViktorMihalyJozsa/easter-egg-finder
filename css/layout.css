@@ -108,47 +108,53 @@ header {
         }
 
     .header-images-box {
+        position: relative;
+
         width:   100%;
         height:  60vh;
     }
 
-        .header-top-left-image {
-            float:   left;
+        .header-top-left-text {
+            position:  absolute;
+            top:       0;
+            left:      0;
 
-            width:   calc(100% - 17vh);  /*  header-image-box:width - header-top-right-image:width  */
-            height:  calc(100% - 45vh);  /*  header-image-box:height - header-bottom-left-image:height  */
+            width:     70%;   /*calc(100% - 17vh);  /*  header-image-box:width - header-top-right-image:width  */
+            height:    100%;  /*calc(100% - 45vh);  /*  header-image-box:height - header-bottom-left-image:height  */
+            padding:   0vh 0vh 0vh 0vh;
 
-            padding: 0vh 0vh 0vh 0vh;
+            z-index:   20;
         }
 
         .header-top-right-image {
-            float:         right;
+            position:  absolute;
+            top:       0;
+            right:     0;
 
-            width:         17vh;  /*  FHD-192px=17.777vh (img:240px) 1fr = 10% = 10vw  */
-            height:        37vh;  /*  FHD-400px=37.037vh (img:500px)                   */
-
-            margin-top:    0vh;
-            margin-right:  0vh;
+            width:     17vh;  /*  FHD-192px=17.777vh (img:240px) 1fr = 10% = 10vw  */
+            height:    37vh;  /*  FHD-400px=37.037vh (img:500px)                   */
             
-            z-index:       20;
+            z-index:   10;
         }
 
         .header-bottom-left-image {
-            float:    left;
+            position:  absolute;
+            bottom:    0;
+            left:      0;
 
-            width:    45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
-            height:   45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
+            width:     45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
+            height:    45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
 
-            z-index:  10;
+            z-index:   10;
         }
 
-        .header-bottom-right-image {
-            float:       right;
+        .header-bottom-right-text {
+            position:    absolute;
+            bottom:      0;
+            right:       0;
 
             width:       54vh;
             height:      45vh;
-
-            margin-top:  -45vh;
 
             z-index:     20;
         }
@@ -220,48 +226,54 @@ header {
             }
     
         .header-images-box {
+            position: relative;
+        
             width:   100%;
             height:  60vh;
         }
-    
-            .header-top-left-image {
-                float:   left;
-    
-                width:   calc(100% - 17vh);  /*  header-image-box:width - header-top-right-image:width  */
-                height:  calc(100% - 45vh);  /*  header-image-box:height - header-bottom-left-image:height  */
-
-                padding: 0vh 0vh 0vh 0vh;
+        
+            .header-top-left-text {
+                position:  absolute;
+                top:       0;
+                left:      0;
+        
+                width:     70%;   /*calc(100% - 17vh);  /*  header-image-box:width - header-top-right-image:width  */
+                height:    100%;  /*calc(100% - 45vh);  /*  header-image-box:height - header-bottom-left-image:height  */
+                padding:   0vh 0vh 0vh 0vh;
+        
+                z-index:   20;
             }
-    
+        
             .header-top-right-image {
-                float:         right;
-    
-                width:         17vh;  /*  FHD-192px=17.777vh (img:240px) 1fr = 10% = 10vw  */
-                height:        37vh;  /*  FHD-400px=37.037vh (img:500px)                   */
-    
-                margin-top:    0vh;
-                margin-right:  0vh;
-                
-                z-index:       20;
+                position:  absolute;
+                top:       0;
+                right:     0;
+        
+                width:     17vh;  /*  FHD-192px=17.777vh (img:240px) 1fr = 10% = 10vw  */
+                height:    37vh;  /*  FHD-400px=37.037vh (img:500px)                   */
+                    
+                z-index:   10;
             }
-    
+        
             .header-bottom-left-image {
-                float:          left;
-    
-                width:          45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
-                height:         45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
-    
-                z-index:        10;
+                position:  absolute;
+                bottom:    0;
+                left:      0;
+        
+                width:     45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
+                height:    45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
+        
+                z-index:   10;
             }
-    
-            .header-bottom-right-image {
-                float:       right;
-    
+        
+            .header-bottom-right-text {
+                position:    absolute;
+                bottom:      0;
+                right:       0;
+        
                 width:       54vh;
                 height:      45vh;
-    
-                margin-top:  -45vh;
-    
+        
                 z-index:     20;
             }
 }    
@@ -339,51 +351,54 @@ header {
             }
 
         .header-images-box {
+            position: relative;
+        
             width:   100%;
             height:  60vh;
         }
-
-            .header-top-left-image {
-                float:    left;
-
-                width:    calc(100% - 15.11vh);  /*  header-image-box:width - header-top-right-image:width  */
-                height:   calc(100% - 34.425vh);  /*  header-image-box:height - header-bottom-left-image:height  */
-                padding:  0vh 0vh 0vh 2vh;
-
-                z-index:  20;
+        
+            .header-top-left-text {
+                position:  absolute;
+                top:       0;
+                left:      0;
+        
+                width:     70%;   /*calc(100% - 17vh);  /*  header-image-box:width - header-top-right-image:width  */
+                height:    100%;  /*calc(100% - 45vh);  /*  header-image-box:height - header-bottom-left-image:height  */
+                padding:   0vh 0vh 0vh 2vh;
+        
+                z-index:   20;
             }
-
+        
             .header-top-right-image {
-                float:         right;
-
-                width:         15.11vh;  /*  FHD-192px=17.777vh*0.85=15.11vh (img:240px)  */
-                height:        31.48vh;  /*  FHD-400px=37.037vh*0.85=31.48vh (img:500px)  */
-
-                margin-top:    0vh;      /*  0vh;  */
-                margin-right:  0vh;      /*  0vh;  */
-
-                z-index:       10;
+                position:  absolute;
+                top:       0;
+                right:     0;
+        
+                width:     15.11vh;  /*  FHD-192px=17.777vh*0.85=15.11vh (img:240px) 1fr = 10% = 10vw  */
+                height:    31.45vh;  /*  FHD-400px=37.037vh*0.85=31.45vh (img:500px)                   */
+                    
+                z-index:   10;
             }
-
+        
             .header-bottom-left-image {
-                float:          left;
-
-                width:          34.425vh;  /*  FHD-486px=45vh*0.85=38.25vh (img:500px)  */
-                height:         34.425vh;  /*  FHD-486px=45vh*0.85=38.25vh (img:500px)  */
-
-                margin-bottom:  0vh;
-
-                z-index:        10;
+                position:  absolute;
+                bottom:    0;
+                left:      0;
+        
+                width:     38.25vh;  /*  FHD-486px=45vh*0.85=38.25vh   (img:500px)  */
+                height:    38.25vh;  /*  FHD-486px=45vh*0.85=38.25vh   (img:500px)  */
+        
+                z-index:   10;
             }
-
-            .header-bottom-right-image {
-                float:       right;
-
-                width:       41.310vh;  /*  FHD-486px=45vh*0.85=38.25vh (img:600px)  */
-                height:      34.425vh;  /*  FHD-486px=45vh*0.85=38.25vh (img:500px)  */
-
-                margin-top:  -34.425vh;
-
+        
+            .header-bottom-right-text {
+                position:    absolute;
+                bottom:      0;
+                right:       0;
+        
+                width:       45.90vh;
+                height:      38.25vh;
+        
                 z-index:     20;
             }
 }
