@@ -115,8 +115,10 @@ header {
         .header-top-left-image {
             float:   left;
 
-            width:   calc(100% - 17vh);  /*  45vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw  */
-            height:  calc(100% - 45vh);  /*  FHD-400px=(37.685vh)37vh  */
+            width:   calc(100% - 17vh);  /*  header-image-box:width - header-top-right-image:width  */
+            height:  calc(100% - 45vh);  /*  header-image-box:height - header-bottom-left-image:height  */
+
+            padding: 4vh 0vh 0vh 0vh;
         }
 
         .header-top-right-image {
@@ -225,8 +227,10 @@ header {
             .header-top-left-image {
                 float:   left;
     
-                width:   calc(100% - 17vh);  /*  45vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw  */
-                height:  calc(100% - 45vh);  /*  FHD-400px=(37.685vh)37vh  */
+                width:   calc(100% - 17vh);        /*  header-image-box:width - header-top-right-image:width  */
+                height:  calc(100% - 45vh - 4vh);  /*  header-image-box:height - header-bottom-left-image:height - padding:top  */
+
+                padding: 4vh 0vh 0vh 0vh;
             }
     
             .header-top-right-image {
