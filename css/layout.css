@@ -251,7 +251,7 @@ header {
                 width:          45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
                 height:         45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
 
-                margin-bottom:  -12vh;
+                /*margin-bottom:  -12vh;*/
     
                 z-index:        10;
             }
