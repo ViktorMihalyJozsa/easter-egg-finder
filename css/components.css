@@ -3,11 +3,11 @@
 \*  ========================================================================  */
 
 h1 {
-    font-size:       6vh;  /*max(42px, 6vh);  /*  min.:40px - ca.:100px  */
+    font-size:       8vh;  /*max(42px, 6vh);  /*  min.:40px - ca.:100px  */
     letter-spacing:  1vh;
     font-weight:     bolder;
     color:           rgba(139, 0, 0, 1);
-    text-shadow:     1vh 1vh 1vh rgba(68, 68, 68, 1), -0.2vh -0.2vh red;
+    text-shadow:     1vh 1vh 1vh rgba(68, 68, 68, 1), -0.2vh -0.2vh #ffff00e6;
     
     z-index:         20;
   }

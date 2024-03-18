@@ -93,12 +93,12 @@ header {
             .finders-button { width:  40%; }
 
         .header-text {
-            display:          flex;
-            justify-content:  center;
-            align-items:      center;
+            display:      flex;
+            align-items:  center;
+            text-align:   center;
  
-            width:            100%;
-            height:           20vh;
+            width:        100%;
+            height:       20vh;
         }
 
         .header-nameday {
@@ -211,12 +211,12 @@ header {
                 .finders-button { width:  40%; }
 
             .header-text {
-                display:          flex;
-                justify-content:  center;
-                align-items:      center;
+                display:      flex;
+                align-items:  center;
+                text-align:   center;
  
-                width:            100%;
-                height:           20vh;
+                width:        100%;
+                height:       20vh;
             }
 
             .header-nameday {
