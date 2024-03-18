@@ -271,8 +271,8 @@ header {
         grid-column:     1;
         grid-row:        1;
 
-        display:         flex;
-        flex-direction:  column;
+        /*display:         flex;
+        flex-direction:  column;*/
 
         width:           auto;  /*1fr;*/
         height:          auto;
@@ -344,9 +344,9 @@ header {
             .header-top-left-image {
                 float:    left;
 
-                width:    calc(100% - 15.11vh);  /*  Mobil(1600x720)-456px/13.2=34vh ~ MINUS: Header-padding(2vh)=32vh !!!  2/3fr=66.666%  */
-                height:   calc(100% - 34.425vh);
-                padding:  2vh 0vh 0vh 2vh;
+                width:    calc(100% - 15.11vh);         /*  header-image-box:width - header-top-right-image:width  */
+                height:   calc(100% - 34.425vh - 4vh);  /*  header-image-box:height - header-bottom-left-image:height - padding:top  */
+                padding:  4vh 0vh 0vh 2vh;
 
                 z-index:  20;
             }
@@ -354,11 +354,11 @@ header {
             .header-top-right-image {
                 float:         right;
 
-                width:         15.11vh;  /*  FHD-192px=17.777vh*0.85=15.11vh (img:240px)  1/3fr=33.333%  */
-                height:        31.48vh;  /*  FHD-400px=37.037vh*0.85=31.48vh (img:500px)                 */
+                width:         15.11vh;  /*  FHD-192px=17.777vh*0.85=15.11vh (img:240px)  */
+                height:        31.48vh;  /*  FHD-400px=37.037vh*0.85=31.48vh (img:500px)  */
 
                 margin-top:    0vh;      /*  0vh;  */
-                margin-right:  0vh;      /*  MINUS: margin-right(NOT Minus .myCanvas"padding") = -2vh    */
+                margin-right:  0vh;      /*  0vh;  */
 
                 z-index:       10;
             }
