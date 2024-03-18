@@ -227,8 +227,8 @@ header {
             .header-top-left-image {
                 float:   left;
     
-                width:   calc(100% - 17vh);        /*  header-image-box:width - header-top-right-image:width  */
-                height:  calc(100% - 45vh - 4vh);  /*  header-image-box:height - header-bottom-left-image:height - padding:top  */
+                width:   calc(100% - 17vh);  /*  header-image-box:width - header-top-right-image:width  */
+                height:  calc(100% - 45vh);  /*  header-image-box:height - header-bottom-left-image:height  */
 
                 padding: 4vh 0vh 0vh 0vh;
             }
