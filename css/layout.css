@@ -209,16 +209,16 @@ header {
                     position:  absolute;
                     top:       0;
                     left:      0;
-                
-                    width:     24vh;  /*  3fr=30%=30*19.2px(1vw)=576px*0.4(40%)=230.4px/10.8(1vh)=21.33vh   */
+            
+                    width:     13.5vh;  /*  100%=max.:50vh >> 1%=0.05vh   */
                 }
 
                 .contact-button {
                     position:  absolute;
                     top:       0;
                     right:     0;
-                
-                    width:     36vh;
+            
+                    width:     33vh;
                 }
 
                 .game-button {
@@ -226,7 +226,7 @@ header {
                     bottom:    0;
                     left:      0;
 
-                    width:     36vh;
+                    width:     29vh;
                 }
 
                 .finders-button {
@@ -234,7 +234,7 @@ header {
                     bottom:    0;
                     right:     0;
 
-                    width:     24vh;
+                    width:     17.5vh;
                 }
 
                 .home-button,
