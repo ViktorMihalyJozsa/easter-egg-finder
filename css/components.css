@@ -4,10 +4,11 @@
 
 h1 {
     font-size:       8vh;  /*max(42px, 6vh);  /*  min.:40px - ca.:100px  */
-    letter-spacing:  1vh;
+    letter-spacing:  2vh;
     font-weight:     bolder;
+    font-style:      italic;
     color:           rgba(139, 0, 0, 1);
-    text-shadow:     1vh 1vh 1vh rgba(68, 68, 68, 1), -0.2vh -0.2vh #ffff00e6;
+    text-shadow:     1vh 1vh 1vh rgba(68, 68, 68, 1), -0.25vh -0.25vh #ffff00e6;
     
     z-index:         20;
   }
@@ -19,7 +20,7 @@ h2, h3,
     line-height:     4.0vh;  /*  133%  */
     font-weight:     bold;
     color:           rgba(139, 0, 0, 1);
-    text-shadow:     1vh 1vh 1vh rgba(68, 68, 68, 1), -0.2vh -0.2vh #ffff00e6;
+    text-shadow:     1vh 1vh 1vh rgba(68, 68, 68, 1), -0.25vh -0.25vh #ffff00e6;
     
     z-index:         20;
 } 
@@ -35,6 +36,14 @@ h4, h5,
     color:           rgba(102, 0, 0, 1);
 
     z-index:         20;
+}
+
+.number {
+    font-size:       4vh;
+    letter-spacing:  1vh;
+    font-weight:     bold;
+    color:           rgba(139, 0, 0, 1);
+    text-shadow:     0.1vh 0.1vh 0.1vh rgba(68, 68, 68, 1), -0.25vh -0.25vh #ffff00e6;
 }
 
     .audio-text:hover,
@@ -54,9 +63,9 @@ h4, h5,
 .link-text,
 .vmj-icon {
     text-decoration:  none;
-    font-size:        3vh;  /*  min.:18px - ca.:30px  */
-    letter-spacing:   0.3vh;
-    line-height:      4vh;
+    font-size:        2.75vh;  /*  min.:18px - ca.:30px  */
+    letter-spacing:   0.275vh;
+    line-height:      2.75vh;
     font-weight:      bold;
     color:            rgba(139, 0, 0, 1);
     text-shadow:      0.1vh 0.1vh 0.1vh rgba(68, 68, 68, 1), -0.1vh -0.1vh #ffff00e6;
@@ -69,9 +78,9 @@ h4, h5,
     .vmj-icon:hover,
     .vmj-icon:active {
         text-decoration: none;
-        font-size:       3.3vh;  /*  min.:20px - ca.:36px  */
-        letter-spacing:  0.33vh;
-        line-height:     4vh;
+        font-size:       3vh;  /*  min.:20px - ca.:36px  */
+        letter-spacing:  0.3vh;
+        line-height:     3vh;
         font-weight:     bold;
         color:           rgba(255, 255, 0, 0.9);
         text-shadow:     0.5vh 0.5vh 0.5vh rgba(68, 68, 68, 1), -0.1vh -0.1vh #8b0000;
