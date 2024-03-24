@@ -4,17 +4,19 @@
 
 h1 {
     font-size:       8vh;  /*max(42px, 6vh);  /*  min.:40px - ca.:100px  */
-    letter-spacing:  2vh;
+    letter-spacing:  1vh;
+    font-family:     "#", cursive;
     font-weight:     bolder;
     font-style:      italic;
     color:           rgba(139, 0, 0, 1);
-    text-shadow:     1vh 1vh 1vh rgba(68, 68, 68, 1), -0.25vh -0.25vh #ffff00e6;
+    text-shadow:     1vh 1vh 1vh rgba(68, 68, 68, 1), -0.5vh -0.5vh #ffff00e6;
     
     z-index:         20;
   }
 
-h2, h3, 
-.header-nameday {
+h2, h3,
+.nameday,
+span {
     font-size:       3vh;  /*max(42px, 6vh);  /*  min.:40px - ca.:100px  */
     letter-spacing:  0.1vh;
     line-height:     4.0vh;  /*  133%  */
@@ -60,7 +62,9 @@ h4, h5,
           z-index:          20;
     }
 
-.link-text,
+button,
+.social-icon,
+.finders-icon,
 .vmj-icon {
     text-decoration:  none;
     font-size:        2.75vh;  /*  min.:18px - ca.:30px  */
@@ -73,8 +77,12 @@ h4, h5,
     z-index:          20;
   }
 
-    .link-text:hover,
-    .link-text:active,
+    button:hover,
+    button:active,
+    .social-icon:hover,
+    .social-icon:active,
+    .finders-icon:hover,
+    .finders-icon:active,
     .vmj-icon:hover,
     .vmj-icon:active {
         text-decoration: none;
@@ -89,9 +97,19 @@ h4, h5,
         z-index:         20;
     }
 
+button {
+    cursor:       pointer;
+    font-family:  "Sunshiney", cursive;
+}
+
     .left {text-align: left;}
     .center {text-align: center;}
     .right {text-align: right;}
+
+ul, li {
+    display:         inline;
+    letter-spacing:  0.5rem;
+}
 
 
 /*  ========================================================================  *\
@@ -99,24 +117,25 @@ h4, h5,
 \*  ========================================================================  */
 
 body {background-color: green; z-index: 0;}
+footer {background-color: green; z-index: 0;}
 
-        /*.header-navigation {background-color: green; z-index: 0;}*/
-        
-    footer {background-color: green; z-index: 0;}
 
 /*h1, h2 {background-color: lightblue; z-index: 0;}*/
 
-/*    .header-menu-box {background-color: #ffa500; z-index: 0;}
-        .header-navigation {background-color: antiquewhite; z-index: 0;}
-        .header-text {background-color: lightcyan; z-index: 0;}
-        .header-nameday {background-color: aquamarine; z-index: 0;}
-    .header-images-box {background-color: red; z-index: 0;}
-        .header-top-left-text {background-color: lightgreen; z-index: 0;}
-        .header-top-right-image {background-color: pink; z-index: 0;}
-        .header-bottom-left-image {background-color: darkred; z-index: 0;}
-        .header-bottom-right-text {background-color: lightgoldenrodyellow; z-index: 0;}
 
-main {background-color: yellow; z-index: 0;}
+/*header {background-color: #ffa500; z-index: 0;}
+/*    .header-menu {background-color: antiquewhite; z-index: 0;}
+    .header-logo {background-color: lightcyan; z-index: 0;}*/
+
+/*aside {background-color: red; z-index: 0;}
+      
+/*    .header-nameday {background-color: aquamarine; z-index: 0;}
+    .aside-top-left {background-color: lightgreen; z-index: 0;}
+    .aside-top-right {background-color: pink; z-index: 0;}
+    .aside-bottom-left {background-color: darkred; z-index: 0;}
+    .aside-bottom-right {background-color: lightgoldenrodyellow; z-index: 0;}
+
+/*main {background-color: yellow; z-index: 0;}
     .control-panel {background-color: blueviolet; z-index: 0;}
 
 footer {background-color: darkgreen; z-index: 0;}
