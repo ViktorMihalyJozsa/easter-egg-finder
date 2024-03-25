@@ -226,10 +226,6 @@ aside {
     height:       68vh;
 }
 
-    /*.mycontact,
-    .mygame,
-    .myfinders {display: none;}*/
-
         .nameday {
             position:  absolute;
             top:       0;
@@ -247,8 +243,8 @@ aside {
             top:       0;
             left:      0;
 
-            width:     calc(100% - 17vh);     /*  aside:width - (*.*)-top-right:width  */
-            height:    calc(100% - 11.25vh);  /*  aside:height - (*.*)-bottom-right:height  */
+            width:     calc(100% - 17vh);    /*  aside:width - (*.*)-top-right:width  */
+            height:    calc(100% - 12.5vh);  /*  aside:height - (*.*)-bottom-right:height  */
             padding:   4vh 0vh 0vh 0vh;
 
             z-index:   20;
@@ -280,8 +276,8 @@ aside {
             bottom:    0;
             left:      0;
 
-            width:     45.0vh;  /*  FHD-486px=45.0vh   (img:500px)  */
-            height:    45.0vh;  /*  FHD-486px=45.0vh   (img:500px)  */
+            width:     45.0vh;  /*  FHD-486px= 45.0vh   (img:500px)  */
+            height:    45.0vh;  /*  FHD-486px= 45.0vh   (img:500px)  */
 
             z-index:   10;
         }
@@ -294,8 +290,8 @@ aside {
             bottom:      0;
             right:       0;
 
-            width:       54vh;
-            height:      11.25vh;
+            width:       50vh;    /*  Mobil:width= 50vh  (img.:600px)  */
+            height:      12.5vh;  /*  Mobil:height= 12.5vh  (img.:150px)  */
 
             z-index:     10;
         }
@@ -335,7 +331,7 @@ aside {
             left:      0;
     
             width:     calc(100% - 14.2vh);  /*  aside:width - (*.*)-top-right:width  */
-            height:    calc(100% - 9vh);     /*  aside:height - (*.*)-bottom-right:height  */
+            height:    calc(100% - 12.5vh);  /*  aside:height - (*.*)-bottom-right:height  */
             padding:   4vh 0vh 0vh 2vh;
     
             z-index:   20;
@@ -381,8 +377,8 @@ aside {
             bottom:      0;
             right:       0;
     
-            width:       43vh;  /*  FHD-600px = 54.0vh*0.8 = 43.2vh (img:600px)  */
-            height:      9vh;  /*  FHD-500px = 11.25vh*0.8 = 9vh (img:150px)  */
+            width:       50vh;    /*  Mobil:width= 50vh  (img.:600px)  */
+            height:      12.5vh;  /*  Mobil:height= 12.5vh  (img.:150px)  */
     
             z-index:     10;
         }
@@ -599,7 +595,7 @@ footer {
     
             width:     100%;  /*  calc(100% - 2vh - 30%);  /*  min.: 62%  -  2vh = 3%  */
             height:    18vh;
-            padding:   0.5vh 25vw 0.5vh 2vh;
+            padding:   0.5vh 30% 0.5vh 2vh;
     
             z-index:   30;
         }
