@@ -106,11 +106,6 @@ button {
     .center {text-align: center;}
     .right {text-align: right;}
 
-ul, li {
-    display:         inline;
-    letter-spacing:  0.5rem;
-}
-
 
 /*  ========================================================================  *\
     T R I A L  B a c k g r o u n d - C o l o r  a n d  - I m a g e

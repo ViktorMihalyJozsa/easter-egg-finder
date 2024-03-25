@@ -326,7 +326,7 @@ aside {
             top:       8vh;
             left:      0;
     
-            width:     70%;               /*  calc(100% - 17vh);  /*  header-image-box:width - header-top-right-image:width  */
+            width:     75%;               /*  calc(100% - 17vh);  /*  header-image-box:width - header-top-right-image:width  */
             height:    calc(100% - 8vh);  /*  header-image-box:height - header-nameday:height  */
             padding:   4vh 2vh 0vh 2vh;
     
