@@ -226,6 +226,10 @@ aside {
     height:       68vh;
 }
 
+    /*.mycontact,
+    .mygame,
+    .myfinders {display: none;}*/
+
         .nameday {
             position:  absolute;
             top:       0;

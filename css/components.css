@@ -8,6 +8,7 @@ h1 {
     font-family:     "#", cursive;
     font-weight:     bolder;
     font-style:      italic;
+
     color:           rgba(139, 0, 0, 1);
     text-shadow:     1vh 1vh 1vh rgba(68, 68, 68, 1), -0.5vh -0.5vh #ffff00e6;
     
@@ -15,27 +16,30 @@ h1 {
   }
 
 h2, h3,
-.nameday,
-span {
+span,
+.nameday {
     font-size:       3vh;  /*max(42px, 6vh);  /*  min.:40px - ca.:100px  */
     letter-spacing:  0.1vh;
     line-height:     4.0vh;  /*  133%  */
     font-weight:     bold;
+
     color:           rgba(139, 0, 0, 1);
     text-shadow:     1vh 1vh 1vh rgba(68, 68, 68, 1), -0.25vh -0.25vh #ffff00e6;
     
     z-index:         20;
 } 
 
-h4, h5,
+h4, h5, p,
 .audio-text {
     text-decoration: none;
+
     font-size:       2.5vh;  /*  min.:10px - ca.:25px  */
     letter-spacing:  0;
     line-height:     2.75vh;
     font-weight:     normal;
-    text-shadow:     none;
+
     color:           rgba(102, 0, 0, 1);
+    text-shadow:     none;
 
     z-index:         20;
 }
@@ -44,63 +48,66 @@ h4, h5,
     font-size:       4vh;
     letter-spacing:  1vh;
     font-weight:     bold;
+
     color:           rgba(139, 0, 0, 1);
     text-shadow:     0.1vh 0.1vh 0.1vh rgba(68, 68, 68, 1), -0.25vh -0.25vh #ffff00e6;
 }
 
     .audio-text:hover,
     .audio-text:active {
+        cursor:           pointer;
         text-decoration:  none;
+
         font-size:        2.75vh;  /*  min.:10px - ca.:25px  */
         letter-spacing:   0;
         line-height:      2.75vh;
         font-weight:      bold;
+
         color:            rgba(255, 255, 0, 0.9);
         text-shadow:      0.5vh 0.5vh 0.5vh rgba(68, 68, 68, 1), -0.1vh -0.1vh black;
         transition:       all 0.5s ease-in-out;
       
-          z-index:          20;
+        z-index:          20;
     }
 
 button,
 .social-icon,
 .finders-icon,
 .vmj-icon {
+    cursor:           pointer;
     text-decoration:  none;
+
+    font-family:      "Sunshiney", cursive;
     font-size:        2.75vh;  /*  min.:18px - ca.:30px  */
     letter-spacing:   0.275vh;
     line-height:      2.75vh;
     font-weight:      bold;
+
     color:            rgba(139, 0, 0, 1);
     text-shadow:      0.1vh 0.1vh 0.1vh rgba(68, 68, 68, 1), -0.1vh -0.1vh #ffff00e6;
 
     z-index:          20;
   }
 
-    button:hover,
-    button:active,
-    .social-icon:hover,
-    .social-icon:active,
-    .finders-icon:hover,
-    .finders-icon:active,
-    .vmj-icon:hover,
-    .vmj-icon:active {
-        text-decoration: none;
-        font-size:       3vh;  /*  min.:20px - ca.:36px  */
-        letter-spacing:  0.3vh;
-        line-height:     3vh;
-        font-weight:     bold;
-        color:           rgba(255, 255, 0, 0.9);
-        text-shadow:     0.5vh 0.5vh 0.5vh rgba(68, 68, 68, 1), -0.1vh -0.1vh #8b0000;
-        transition:      all 0.5s ease-in-out;
+    button:hover, button:active,
+    .social-icon:hover, .social-icon:active,
+    .finders-icon:hover, .finders-icon:active,
+    .vmj-icon:hover, .vmj-icon:active {
+        cursor:           pointer;
+        text-decoration:  none;
 
-        z-index:         20;
+        font-family:      "Sunshiney", cursive;
+        font-size:        3vh;  /*  min.:20px - ca.:36px  */
+        letter-spacing:   0.3vh;
+        line-height:      3vh;
+        font-weight:      bold;
+
+        color:            rgba(255, 255, 0, 0.9);
+        text-shadow:      0.5vh 0.5vh 0.5vh rgba(68, 68, 68, 1), -0.1vh -0.1vh #8b0000;
+        transition:       all 0.5s ease-in-out;
+
+        z-index:          20;
     }
-
-button {
-    cursor:       pointer;
-    font-family:  "Sunshiney", cursive;
-}
 
     .left {text-align: left;}
     .center {text-align: center;}
