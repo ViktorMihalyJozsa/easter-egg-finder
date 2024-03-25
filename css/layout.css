@@ -244,22 +244,24 @@ aside {
         .mygame-top-left,
         .myfinders-top-left {
             position:  absolute;
-            top:       8vh;
+            top:       0;
             left:      0;
 
-            width:     70%;               /*calc(100% - 17vh);  /*  header-image-box:width - header-top-right-image:width  */
-            height:    calc(100% - 8vh);  /*  header-image-box:height - header-nameday:height  */
+            width:     calc(100% - 17vh);     /*  aside:width - (*.*)-top-right:width  */
+            height:    calc(100% - 11.25vh);  /*  aside:height - (*.*)-bottom-right:height  */
             padding:   4vh 0vh 0vh 0vh;
 
             z-index:   20;
         }
+
+            .myhome-top-left {top: 8vh;}
 
         .myhome-top-right,
         .mycontact-top-right,
         .mygame-top-right,
         .myfinders-top-right {
             position:  absolute;
-            top:       8vh;
+            top:       0;
             right:     0;
 
             width:     17vh;  /*  FHD-192px=17.777vh (img:240px)  */
@@ -267,6 +269,8 @@ aside {
             
             z-index:   10;
         }
+
+            .myhome-top-right {top: 8vh;}
 
         .myhome-bottom-left,
         .mycontact-bottom-left,
@@ -291,9 +295,9 @@ aside {
             right:       0;
 
             width:       54vh;
-            height:      45vh;
+            height:      11.25vh;
 
-            z-index:     20;
+            z-index:     10;
         }
 
 
@@ -327,22 +331,24 @@ aside {
         .mygame-top-left,
         .myfinders-top-left {
             position:  absolute;
-            top:       8vh;
+            top:       0vh;
             left:      0;
     
-            width:     75%;               /*  calc(100% - 17vh);  /*  header-image-box:width - header-top-right-image:width  */
-            height:    calc(100% - 8vh);  /*  header-image-box:height - header-nameday:height  */
-            padding:   4vh 2vh 0vh 2vh;
+            width:     calc(100% - 14.2vh);  /*  aside:width - (*.*)-top-right:width  */
+            height:    calc(100% - 9vh);     /*  aside:height - (*.*)-bottom-right:height  */
+            padding:   4vh 0vh 0vh 2vh;
     
             z-index:   20;
         }
+
+            .myhome-top-left {top: 8vh;}
     
         .myhome-top-right,
         .mycontact-top-right,
         .mygame-top-right,
         .myfinders-top-right {
             position:  absolute;
-            top:       8vh;
+            top:       0vh;
             right:     0;
     
             width:     14.2vh;  /*  FHD-192px=17.777*0.8 = 14.221vh (img:240px)  */
@@ -350,6 +356,8 @@ aside {
                 
             z-index:   10;
         }
+
+            .myhome-top-right {top: 8vh;}
     
         .myhome-bottom-left,
         .mycontact-bottom-left,
@@ -373,10 +381,10 @@ aside {
             bottom:      0;
             right:       0;
     
-            width:       43vh;  /*  FHD-600px = 54.0vh*0.8 = 43.2vh (img:500px)  */
-            height:      36vh;  /*  FHD-500px = 45.0vh*0.8 = 36.0vh (img:500px)  */
+            width:       43vh;  /*  FHD-600px = 54.0vh*0.8 = 43.2vh (img:600px)  */
+            height:      9vh;  /*  FHD-500px = 11.25vh*0.8 = 9vh (img:150px)  */
     
-            z-index:     20;
+            z-index:     10;
         }
 }
 

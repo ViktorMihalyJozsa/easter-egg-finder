@@ -109,6 +109,14 @@ button,
         z-index:          20;
     }
 
+li {
+    width:   auto;
+    height:  6vh;
+    margin:  0vh 0vh 2vh 0vh;
+
+    z-index: 100;
+}
+
     .left {text-align: left;}
     .center {text-align: center;}
     .right {text-align: right;}
@@ -126,20 +134,25 @@ footer {background-color: green; z-index: 0;}
 
 
 /*header {background-color: #ffa500; z-index: 0;}
+
 /*    .header-menu {background-color: antiquewhite; z-index: 0;}
     .header-logo {background-color: lightcyan; z-index: 0;}*/
 
-/*aside {background-color: red; z-index: 0;}
+/*aside {background-color: red; z-index: 0;}*/
       
-/*    .header-nameday {background-color: aquamarine; z-index: 0;}
-    .aside-top-left {background-color: lightgreen; z-index: 0;}
-    .aside-top-right {background-color: pink; z-index: 0;}
-    .aside-bottom-left {background-color: darkred; z-index: 0;}
-    .aside-bottom-right {background-color: lightgoldenrodyellow; z-index: 0;}
+/*    .nameday {background-color: aquamarine; z-index: 0;}
+    .myfinders-top-left {background-color: lightgreen; z-index: 0;}
+    .myfinders-top-right {background-color: pink; z-index: 0;}
+    .myfinders-bottom-left {background-color: darkred; z-index: 0;}
+    .myfinders-bottom-right {background-color: lightgoldenrodyellow; z-index: 0;}
+
+    li {background-color: #b2e40f; z-index: 0;}*/
 
 /*main {background-color: yellow; z-index: 0;}
-    .control-panel {background-color: blueviolet; z-index: 0;}
 
-footer {background-color: darkgreen; z-index: 0;}
+    .control-panel {background-color: blueviolet; z-index: 0;}*/
+
+/*footer {background-color: darkgreen; z-index: 0;}
+
     .footer-text {background-color: aqua; z-index: 0;}
     .footer-image {background-color: lightcoral; z-index: 0;}*/
