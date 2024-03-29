@@ -45,12 +45,14 @@
 \*  ========================================================================  */
 
 header {
-    grid-area:    header;
-    grid-column:  2;
-    grid-row:     1;
+    grid-area:      header;
+    grid-column:    2;
+    grid-row:       1;
 
-    width:        3fr;
-    height:       32vh;
+    position:       relative;
+
+    width:          3fr;
+    height:         34vh;
 }
 
     nav {
@@ -124,18 +126,29 @@ header {
         height:       20vh;
     }
 
+    .header-image {
+        position:  absolute;
+        right:     0;
+        bottom:    0;
+
+        width:     100%;
+        height:    auto;
+    }
+
 
 @media(max-width: 768px) {
     header {
-        grid-area:     header;
-        grid-column:   1;
-        grid-row:      1;
-    
-        width:         auto;
-        height:        32vh;
+        grid-area:      header;
+        grid-column:    1;
+        grid-row:       1;
 
-        border-right:  0.1vh solid green;
-        border-left:   0.1vh solid green;
+        position:       relative;
+    
+        width:          auto;
+        height:         34vh;
+
+        border-right:   0.1vh solid green;
+        border-left:    0.1vh solid green;
     }
     
          nav {
@@ -208,6 +221,15 @@ header {
             width:        100%;
             height:       20vh;
         }
+
+        .header-image {
+            position:  absolute;
+            right:     0;
+            bottom:    0;
+    
+            width:     100%;
+            height:    auto;
+        }
 }
 
 
@@ -223,16 +245,17 @@ aside {
     position:     relative;
 
     width:        3fr;
-    height:       68vh;
+    height:       66vh;
 }
 
         .nameday {
-            position:  absolute;
-            top:       0;
+            position:       absolute;
+            top:            0;
 
-            width:     100%;
-            height:    8vh;
-            padding:   0vh 2vh 0vh 0vh;
+            width:          100%;
+            height:         8vh;
+            padding:        1vh 2vh 1vh 2vh;
+            border-bottom:  0.2vh solid rgba(128, 128, 128, 0.25);
         }
 
         .myhome-top-left,
@@ -245,7 +268,7 @@ aside {
 
             width:     calc(100% - 17vh);  /*  aside:width - (*.*)-top-right:width  */
             height:    100%;               /*  aside:height - (*.*)-bottom-right:height  */
-            padding:   4vh 0vh 0vh 0vh;
+            padding:   4vh 0vh 0vh 2vh;
 
             z-index:   20;
         }
@@ -257,7 +280,7 @@ aside {
         .mygame-top-right,
         .myfinders-top-right {
             position:  absolute;
-            top:       0;
+            top:       2vh;
             right:     0;
 
             width:     17vh;  /*  FHD-192px=17.777vh (img:240px)  */
@@ -266,7 +289,7 @@ aside {
             z-index:   10;
         }
 
-            .myhome-top-right {top: 8vh;}
+            .myhome-top-right {top: 10vh;}
 
         .myhome-bottom-left,
         .mycontact-bottom-left,
@@ -306,7 +329,7 @@ aside {
         position:      relative;
     
         width:         auto;
-        height:        68vh;
+        height:        66vh;
 
         border-right:  1px solid green;
         border-left:   1px solid green;
@@ -314,12 +337,13 @@ aside {
     }
     
         .nameday {
-            position:  absolute;
-            top:       0;
-    
-            width:     100%;
-            height:    8vh;
-            padding:   0vh 2vh 0vh 2vh;
+            position:       absolute;
+            top:            0;
+
+            width:          100%;
+            height:         8vh;
+            padding:        1vh 2vh 1vh 2vh;
+            border-bottom:  0.2vh solid rgba(128, 128, 128, 0.25);
         }
     
         .myhome-top-left,
@@ -331,13 +355,13 @@ aside {
             left:      0;
     
             width:     calc(100% - 14.2vh);  /*  aside:width - (*.*)-top-right:width  */
-            height:    calc(100% - 12.5vh);  /*  aside:height - (*.*)-bottom-right:height  */
+            height:    100%;  /*  aside:height - (*.*)-bottom-right:height  */
             padding:   4vh 0vh 0vh 2vh;
     
             z-index:   20;
         }
 
-            .myhome-top-left {top: 8vh;}
+            .myhome-top-left {height: calc(100% - 8vh); top: 8vh;}
     
         .myhome-top-right,
         .mycontact-top-right,
@@ -353,7 +377,7 @@ aside {
             z-index:   10;
         }
 
-            .myhome-top-right {top: 8vh;}
+            .myhome-top-right {top: 10vh;}
     
         .myhome-bottom-left,
         .mycontact-bottom-left,

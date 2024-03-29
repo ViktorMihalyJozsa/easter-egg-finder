@@ -5,9 +5,8 @@
 h1 {
     font-size:       8vh;  /*max(42px, 6vh);  /*  min.:40px - ca.:100px  */
     letter-spacing:  1vh;
-    font-family:     "#", cursive;
     font-weight:     bolder;
-    font-style:      italic;
+    /*font-style:      italic;*/
 
     color:           rgba(139, 0, 0, 1);
     text-shadow:     1vh 1vh 1vh rgba(68, 68, 68, 1), -0.5vh -0.5vh #ffff00e6;
@@ -16,8 +15,7 @@ h1 {
   }
 
 h2, h3,
-span,
-.nameday {
+span {
     font-size:       3vh;  /*max(42px, 6vh);  /*  min.:40px - ca.:100px  */
     letter-spacing:  0.1vh;
     line-height:     4.0vh;  /*  133%  */
@@ -30,6 +28,7 @@ span,
 } 
 
 h4, h5, p,
+.nameday,
 .audio-text {
     text-decoration: none;
 
@@ -38,11 +37,13 @@ h4, h5, p,
     line-height:     2.75vh;
     font-weight:     normal;
 
-    color:           rgba(102, 0, 0, 1);
+    color:           rgba(139, 0, 0, 1);
     text-shadow:     none;
 
     z-index:         20;
 }
+
+    .nameday {font-weight: bold; color: darkred;}
 
 .number {
     font-size:       4vh;
@@ -77,12 +78,12 @@ button,
     cursor:           pointer;
     text-decoration:  none;
 
-    font-family:      "Sunshiney", cursive;
+    font-family:      "Indie Flower", cursive;
     font-size:        2.75vh;  /*  min.:18px - ca.:30px  */
     letter-spacing:   0.275vh;
-    line-height:      2.75vh;
+    line-height:      3vh;
     font-weight:      bold;
-
+ 
     color:            rgba(139, 0, 0, 1);
     text-shadow:      0.1vh 0.1vh 0.1vh rgba(68, 68, 68, 1), -0.1vh -0.1vh #ffff00e6;
 
@@ -96,7 +97,7 @@ button,
         cursor:           pointer;
         text-decoration:  none;
 
-        font-family:      "Sunshiney", cursive;
+        font-family:      "Indie Flower", cursive;
         font-size:        3vh;  /*  min.:20px - ca.:36px  */
         letter-spacing:   0.3vh;
         line-height:      3vh;
