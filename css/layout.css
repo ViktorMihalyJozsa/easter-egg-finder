@@ -162,7 +162,7 @@ header {
                     top:       0;
                     left:      0;
                     
-                    width:     17vh;   /*  3fr=30%=30*19.2px(1vw)=576px*0.4(40%)=230.4px/10.8(1vh)=21.33vh   */
+                    width:     16.5vh;   /*  3fr=30%=30*19.2px(1vw)=576px*0.4(40%)=230.4px/10.8(1vh)=21.33vh   */
                     height:    4.5vh;
             }
     
@@ -171,7 +171,7 @@ header {
                     top:       0;
                     right:     0;
                     
-                    width:     37vh;
+                    width:     35.5vh;
                     height:    4.5vh;
             }
     
@@ -180,7 +180,7 @@ header {
                     bottom:    0;
                     left:      0;
     
-                    width:     32vh;
+                    width:     31vh;
                     height:    4.5vh;
             }
     
@@ -189,7 +189,7 @@ header {
                     bottom:    0;
                     right:     0;
     
-                    width:     22vh;
+                    width:     21vh;
                     height:    4.5vh;
             }
     
