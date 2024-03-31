@@ -50,10 +50,11 @@ body {                        /* Hide scrollbar for IE, Edge and Firefox */
       }
 
       body {
-        background-image:     url("../assets/body-background.jpg");
-        background-size:      cover;
-        background-repeat:    no-repeat;
-        background-position:  bottom;
+        background-image:       url("../assets/body-background.jpg");
+        background-size:        cover;
+        background-repeat:      no-repeat;
+        background-position-x:  right;
+        background-attachment:  fixed;
       }
   }
 
