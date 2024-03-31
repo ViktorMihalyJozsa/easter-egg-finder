@@ -236,17 +236,17 @@ header {
 
 @media(max-width: 768px) {
     header {
-        grid-area:      header;
-        grid-column:    1;
-        grid-row:       1;
+        grid-area:     header;
+        grid-column:   1;
+        grid-row:      1;
 
-        position:       relative;
+        position:      relative;
     
-        width:          auto;
-        height:         34vh;
+        width:         auto;
+        height:        34vh;
 
-        border-right:   0.1vh solid green;
-        border-left:    0.1vh solid green;
+        border-right:  0.25vh dashed green;
+        border-left:   0.25vh dashed green;
     }
     
          nav {
@@ -446,9 +446,8 @@ aside {
         width:         auto;
         height:        66vh;
 
-        border-right:  1px solid green;
-        border-left:   1px solid green;
-        box-shadow:    1vh 1vh 1vh rgba(0, 0, 0, 0.5);
+        border-right:  0.25vh dashed green;
+        border-left:   0.25vh dashed green;
     }
     
         .nameday {
