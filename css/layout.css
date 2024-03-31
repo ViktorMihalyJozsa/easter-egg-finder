@@ -495,9 +495,9 @@ aside {
         .myfinders-top-right {
             position:  absolute;
             top:       2vh;
-            right:     0vh;  /*  7.25vh = 3.35vw - ca.:46.25%  */
+            right:     -5.75vh;  /*  7.25vh = 3.35vw - ca.:46.25%  */
 
-            width:     14.2vh;  /*  FHD-192px=17.777*0.8 = 14.222vh (img:240px)  */
+            width:     19.5vh;  /*  FHD-264px=24.444*0.8 = 19.555vh (img:330px)  */
             height:    29.6vh;  /*  FHD-400px=37.037*0.8 = 29.629vh (img:500px)  */
             
             z-index:   10;
