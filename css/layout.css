@@ -633,11 +633,11 @@ main {
             }
       
             .number {
-                position:        absolute;
-                text-align:      center;
+                position:  absolute;
     
-                width:           auto;
-                height:          auto;
+                width:     auto;
+                height:    auto;
+                padding:   0.5vh 0vh 0vh 1vh;
             }
 
         .center-button {

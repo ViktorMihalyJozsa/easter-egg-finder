@@ -15,13 +15,13 @@ const c = canvas.getContext('2d');                   // a canvas contextje
 const width = canvas.width;                          // a szélesség
 const height = canvas.height;                        // a magasság
 
-size = bodyHeight * 0.04;                            // 27.5 - a mezők mérete;
+size = bodyHeight * 0.06;                            // 27.5 - a mezők mérete;
 
-canvas.width  = 12 * size;                           // a canvas szélessége
-canvas.height = 15 * size;                           // a canvas magassága
+canvas.width  = 8 * size;                           // a canvas szélessége
+canvas.height = 10 * size;                           // a canvas magassága
 
-const columns = 12;                                  // oszlopok darabszáma
-const rows = 15;                                     // sorok darabszáma
+const columns = 8;                                  // oszlopok darabszáma
+const rows = 10;                                     // sorok darabszáma
 
 const actionButton = document.getElementById('action-button');
 const mineCounter = document.getElementById('mine-count');
