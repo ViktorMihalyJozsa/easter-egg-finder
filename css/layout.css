@@ -610,9 +610,7 @@ main {
         justify-content:  space-between;
         align-items:      center;
 
-        text-decoration:  none;
-
-        width:            auto;  /*  100%;  /*  48vh;  /*  canvas.width = 12(colums) * size(bodyHeight*0.04) - finder.js  */
+        width:            48vh;  /*  canvas.width = 8(colums) * size(bodyHeight*0.06=6vh) >> finder.js  */
         height:           auto;
         margin:           0vh 0vh 2vh 0vh;
     }
@@ -661,8 +659,6 @@ main {
         display:          flex;
         align-items:      center;
         justify-content:  center;
-
-        text-decoration:  none;
 
         cursor:           pointer;
         box-shadow:       1vh 1vh 1vh rgba(0, 0, 0, 0.5);

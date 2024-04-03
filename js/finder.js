@@ -15,12 +15,12 @@ const c = canvas.getContext('2d');                   // a canvas contextje
 const width = canvas.width;                          // a szélesség
 const height = canvas.height;                        // a magasság
 
-size = bodyHeight * 0.06;                            // 27.5 - a mezők mérete;
+size = bodyHeight * 0.06;                            // a mezők mérete;
 
-canvas.width  = 8 * size;                           // a canvas szélessége
+canvas.width  = 8 * size;                            // a canvas szélessége
 canvas.height = 10 * size;                           // a canvas magassága
 
-const columns = 8;                                  // oszlopok darabszáma
+const columns = 8;                                   // oszlopok darabszáma
 const rows = 10;                                     // sorok darabszáma
 
 const actionButton = document.getElementById('action-button');
@@ -29,7 +29,7 @@ const timeCounter = document.getElementById('time');
 
 const mine = 'mine';
 
-const mineCount = 8;                                // a keresendő tárgyak darabszáma
+const mineCount = 8;                                 // a keresendő tárgyak darabszáma
 
 const images = {
   'hidden': document.getElementById('hidden'),
