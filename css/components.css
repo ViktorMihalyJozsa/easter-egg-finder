@@ -6,7 +6,6 @@ h1 {
     font-size:       8vh;  /*max(42px, 6vh);  /*  min.:40px - ca.:100px  */
     letter-spacing:  1vh;
     font-weight:     bolder;
-    /*font-style:      italic;*/
 
     color:           rgba(139, 0, 0, 1);
     text-shadow:     1vh 1vh 1vh rgba(68, 68, 68, 1), -0.5vh -0.5vh #ffff00e6;
