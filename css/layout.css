@@ -597,7 +597,13 @@ main {
         border-left:          1px solid green;
         box-shadow:           1vh 1vh 1vh rgba(0, 0, 0, 0.5);
     }
-    
+
+        .myMain {
+            width:    auto;
+            height:   auto;
+
+            z-index:  100;
+        }
 }
 
 
@@ -610,7 +616,7 @@ main {
         justify-content:  space-between;
         align-items:      center;
 
-        width:            48vh;  /*  canvas.width = 8(colums) * size(bodyHeight*0.06=6vh) >> finder.js  */
+        width:            auto;  /*48vh;  /*  canvas.width = 8(colums) * size(bodyHeight*0.06=6vh) >> finder.js  */
         height:           auto;
         margin:           0vh 0vh 2vh 0vh;
     }
@@ -659,6 +665,9 @@ main {
         display:          flex;
         align-items:      center;
         justify-content:  center;
+
+        width:            auto;
+        height:           auto;
 
         cursor:           pointer;
         box-shadow:       1vh 1vh 1vh rgba(0, 0, 0, 0.5);
