@@ -50,7 +50,7 @@ if (ho==4)
         "Tivadar","Konrád","Csilla, Noémi","Béla","György","Márk","Ervin", 
         "Zita","Valéria","Péter","Katalin, Kitti","" )} 
 if (ho==5) 
-  { var napok=new initArray("MUNKA ÜNN.,Fülöp, Jakab","Zsigmond","Tímea, Irma",
+  { var napok=new initArray("MUNKA ÜNNEPE, Fülöp, Jakab","Zsigmond","Tímea, Irma",
         "Mónika, Flórián","Györgyi","Ivett, Frida","Gizella","Mihály","Gergely",
         "Ármin, Pálma","Ferenc","Pongrác","Szervác, Imola","Bonifác","Zsófia, Szonja", 
         "Mózes, Botond","Paszkál","Erik, Alexandra","Ivó, Milán", 
