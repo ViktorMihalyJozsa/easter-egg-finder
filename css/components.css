@@ -31,7 +31,7 @@ h4, h5, p,
 .audio-text {
     text-decoration: none;
 
-    font-size:       max(9px, 2.5vh);  /*  min.:10px - ca.:25px  */
+    font-size:       clamp(10px, 2.4vh, 25px);  /*  min.:10px - ca.:25px  */
     letter-spacing:  0;
     line-height:     2.75vh;
     font-weight:     normal;
