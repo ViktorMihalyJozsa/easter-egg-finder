@@ -70,13 +70,7 @@ h4, h5, p,
         z-index:          20;
     }
 
-/*a {
-    display:          block;
-    text-decoration:  none;
-    cursor:           pointer;
-}*/
-
-a,
+button,
 .social-icon,
 .finders-icon,
 .vmj-icon {
@@ -95,7 +89,7 @@ a,
     z-index:          20;
   }
 
-    a:hover, a:active,
+    button:hover, button:active,
     .social-icon:hover, .social-icon:active,
     .finders-icon:hover, .finders-icon:active,
     .vmj-icon:hover, .vmj-icon:active {
